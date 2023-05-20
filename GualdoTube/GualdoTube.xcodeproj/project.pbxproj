@@ -23,6 +23,12 @@
 		2D3F3F032A183CF8009CB0AF /* ChannelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D3F3F012A183CF8009CB0AF /* ChannelsViewController.xib */; };
 		2D3F3F062A183D06009CB0AF /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3F042A183D06009CB0AF /* AboutViewController.swift */; };
 		2D3F3F072A183D06009CB0AF /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D3F3F052A183D06009CB0AF /* AboutViewController.xib */; };
+		2D3F3F0A2A184465009CB0AF /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3F092A184465009CB0AF /* ServiceLayer.swift */; };
+		2D3F3F0C2A184476009CB0AF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3F0B2A184476009CB0AF /* NetworkError.swift */; };
+		2D3F3F0E2A184532009CB0AF /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3F0D2A184532009CB0AF /* RequestModel.swift */; };
+		2D3F3F112A1846BB009CB0AF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3F102A1846BB009CB0AF /* Constants.swift */; };
+		2D3F3F172A185176009CB0AF /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3F162A185176009CB0AF /* HomeProvider.swift */; };
+		2D3F3F192A18537B009CB0AF /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3F182A18537B009CB0AF /* HomePresenter.swift */; };
 		2D6FC6142A1659EE00436F02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FC6132A1659EE00436F02 /* AppDelegate.swift */; };
 		2D6FC6162A1659EE00436F02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FC6152A1659EE00436F02 /* SceneDelegate.swift */; };
 		2D6FC6182A1659EE00436F02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FC6172A1659EE00436F02 /* ViewController.swift */; };
@@ -48,6 +54,12 @@
 		2D3F3F012A183CF8009CB0AF /* ChannelsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelsViewController.xib; sourceTree = "<group>"; };
 		2D3F3F042A183D06009CB0AF /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		2D3F3F052A183D06009CB0AF /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		2D3F3F092A184465009CB0AF /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		2D3F3F0B2A184476009CB0AF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		2D3F3F0D2A184532009CB0AF /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		2D3F3F102A1846BB009CB0AF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2D3F3F162A185176009CB0AF /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
+		2D3F3F182A18537B009CB0AF /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		2D6FC6102A1659EE00436F02 /* GualdoTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GualdoTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6FC6132A1659EE00436F02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D6FC6152A1659EE00436F02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,8 +104,9 @@
 		2D3F3EEF2A183C51009CB0AF /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2D3F3EF02A183C75009CB0AF /* HomeViewController.swift */,
-				2D3F3EF12A183C75009CB0AF /* HomeViewController.xib */,
+				2D3F3F142A185153009CB0AF /* Presenter */,
+				2D3F3F122A185124009CB0AF /* Model */,
+				2D3F3F132A185133009CB0AF /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -134,6 +147,57 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		2D3F3F082A184432009CB0AF /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				2D3F3F092A184465009CB0AF /* ServiceLayer.swift */,
+				2D3F3F0B2A184476009CB0AF /* NetworkError.swift */,
+				2D3F3F0D2A184532009CB0AF /* RequestModel.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		2D3F3F0F2A1846A7009CB0AF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2D3F3F102A1846BB009CB0AF /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2D3F3F122A185124009CB0AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D3F3F152A18515A009CB0AF /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2D3F3F132A185133009CB0AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D3F3EF02A183C75009CB0AF /* HomeViewController.swift */,
+				2D3F3EF12A183C75009CB0AF /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D3F3F142A185153009CB0AF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2D3F3F182A18537B009CB0AF /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2D3F3F152A18515A009CB0AF /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				2D3F3F162A185176009CB0AF /* HomeProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
 		2D6FC6072A1659EE00436F02 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +223,8 @@
 				2D3F3EEA2A183AD5009CB0AF /* Main */,
 				2D3F3EE12A17C528009CB0AF /* Model */,
 				2D3F3EF52A183C8E009CB0AF /* Playlists */,
+				2D3F3F082A184432009CB0AF /* ServiceLayer */,
+				2D3F3F0F2A1846A7009CB0AF /* Utils */,
 				2D3F3EF42A183C83009CB0AF /* Videos */,
 				2D6FC6132A1659EE00436F02 /* AppDelegate.swift */,
 				2D6FC6152A1659EE00436F02 /* SceneDelegate.swift */,
@@ -248,19 +314,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D3F3EE92A1838B3009CB0AF /* ChannelsModel.swift in Sources */,
+				2D3F3F0C2A184476009CB0AF /* NetworkError.swift in Sources */,
 				2D3F3EE72A183665009CB0AF /* PlaylistItemsModel.swift in Sources */,
+				2D3F3F192A18537B009CB0AF /* HomePresenter.swift in Sources */,
 				2D3F3EFA2A183CC4009CB0AF /* VideosViewController.swift in Sources */,
 				2D6FC6182A1659EE00436F02 /* ViewController.swift in Sources */,
 				2D3F3EFE2A183CDD009CB0AF /* PlaylistsViewController.swift in Sources */,
+				2D3F3F0E2A184532009CB0AF /* RequestModel.swift in Sources */,
 				2D3F3EE32A17C54A009CB0AF /* PlaylistModel.swift in Sources */,
 				2D6FC6142A1659EE00436F02 /* AppDelegate.swift in Sources */,
 				2D3F3EF22A183C75009CB0AF /* HomeViewController.swift in Sources */,
 				2D3F3EE52A17D6B7009CB0AF /* VideoModel.swift in Sources */,
+				2D3F3F172A185176009CB0AF /* HomeProvider.swift in Sources */,
 				2D3F3EEE2A183B25009CB0AF /* MainViewController.swift in Sources */,
+				2D3F3F0A2A184465009CB0AF /* ServiceLayer.swift in Sources */,
 				2D3F3F062A183D06009CB0AF /* AboutViewController.swift in Sources */,
 				2D3F3F022A183CF8009CB0AF /* ChannelsViewController.swift in Sources */,
 				2D6FC6162A1659EE00436F02 /* SceneDelegate.swift in Sources */,
 				2D3F3EEC2A183B0A009CB0AF /* RootPageViewController.swift in Sources */,
+				2D3F3F112A1846BB009CB0AF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

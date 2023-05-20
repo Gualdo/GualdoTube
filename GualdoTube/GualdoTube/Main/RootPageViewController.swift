@@ -32,7 +32,7 @@ class RootPageViewController: UIPageViewController {
                               ChannelsViewController(),
                               AboutViewController()]
         
-        _ = subViewControllers.enumerated().map({$0.element.view.tag = $0.offset})
+        _ = subViewControllers.enumerated().map{ $0.element.view.tag = $0.offset }
         
         // Esto hace lo mismo que la linea de arriba
         //        for (offset, element) in subViewControllers.enumerated() {
