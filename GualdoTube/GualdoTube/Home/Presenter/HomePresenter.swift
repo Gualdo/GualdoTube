@@ -7,7 +7,20 @@
 
 import Foundation
 
+protocol HomeViewProtocol: AnyObject {
+    func getData(list: [[Any]])
+}
+
 class HomePresenter {
+    
+    weak var delegate: HomeViewProtocol?
+    
+    var provider: HomeProviderProtocol
+    
+    init(delegate: HomeViewProtocol, provider: HomeProviderProtocol = HomeProvider()) {
+        self.delegate = delegate
+        self.provider = provider
+    }
     
     func getVideos() {
         
