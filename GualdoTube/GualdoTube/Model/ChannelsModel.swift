@@ -42,9 +42,15 @@ struct ChannelsModel: Codable {
             
             // MARK: - Thumbnails
             struct Thumbnails: Codable {
-                let ´default´: Default
+                let defaultSize: Default
                 let medium: Default
                 let high: Default
+                
+                enum CodingKeys: String, CodingKey {
+                    case defaultSize = "default"
+                    case medium
+                    case high
+                }
                 
                 // MARK: - Default
                 struct Default: Codable {

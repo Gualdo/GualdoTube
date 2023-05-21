@@ -8,46 +8,64 @@
 import Foundation
 
 // MARK: - VideoModel
-struct VideoModel: Codable {
+struct VideoModel: Decodable {
     let kind: String
     let etag: String
     let items: [Item]
     let pageInfo: PageInfo
     
     // MARK: - Item
-    struct Item: Codable {
+    struct Item: Decodable {
         let kind: String
-        let etag: String
-        let id: String
-        let snippet: Snippet
-        let contentDetails: ContentDetails
-        let status: Status
-        let statistics: Statistics
-        let player: Player
-        let topicDetails: TopicDetails
-        let recordingDetails: RecordingDetails
+        let id: String?
+        let snippet: Snippet?
+        let contentDetails: ContentDetails?
+        let statistics: Statistics?
+        
+        enum CodingKeys: String, CodingKey {
+            case kind
+            case id
+            case snippet
+            case contentDetails
+            case statistics
+        }
+        
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            
+            self.kind = try container.decode(String.self, forKey: .kind)
+            
+            if let id = try? container.decode(VideoId.self, forKey: .id) {
+                self.id = id.videoId
+            } else {
+                self.id = try container.decodeIfPresent(String.self, forKey: .id)
+            }
+            
+            self.snippet = try container.decodeIfPresent(Snippet.self, forKey: .snippet)
+            self.contentDetails = try container.decodeIfPresent(ContentDetails.self, forKey: .contentDetails)
+            self.statistics = try container.decodeIfPresent(Statistics.self, forKey: .statistics)
+        }
+        
+        // MARK: - VideoId
+        struct VideoId: Decodable {
+            let kind: String
+            let videoId: String
+        }
         
         // MARK: - Snippet
         struct Snippet: Codable {
-            let publishedAt: Date
+            let publishedAt: String
             let channelId: String
             let title: String
             let description: String
             let channelTitle: String
-            let categoryId: String
-            let liveBroadcastContent: String
-            let defaultAudioLanguage: String
-            let tags: [String]
+            let tags: [String]?
             let thumbnails: Thumbnails
-            let localized: Localized
             
             // MARK: - Thumbnails
             struct Thumbnails: Codable {
-                let ´default´: Default
                 let medium: Default
                 let high: Default
-                let standard: Default
-                let maxres: Default
                 
                 // MARK: - Default
                 struct Default: Codable {
@@ -56,32 +74,16 @@ struct VideoModel: Codable {
                     let height: Int
                 }
             }
-            
-            // MARK: - Localized
-            struct Localized: Codable {
-                let title, description: String
-            }
         }
         
         // MARK: - ContentDetails
-        struct ContentDetails: Codable {
+        struct ContentDetails: Decodable {
             let duration: String
             let dimension: String
             let definition: String
             let caption: String
             let licensedContent: Bool
             let projection: String
-            let contentRating: RecordingDetails
-        }
-        
-        // MARK: - Status
-        struct Status: Codable {
-            let uploadStatus: String
-            let privacyStatus: String
-            let license: String
-            let embeddable: Bool
-            let publicStatsViewable: Bool
-            let madeForKids: Bool
         }
         
         // MARK: - Statistics
@@ -90,20 +92,6 @@ struct VideoModel: Codable {
             let likeCount: String
             let favoriteCount: String
             let commentCount: String
-        }
-        
-        // MARK: - Player
-        struct Player: Codable {
-            let embedHtml: String
-        }
-        
-        // MARK: - TopicDetails
-        struct TopicDetails: Codable {
-            let topicCategories: [String]
-        }
-        
-        // MARK: - RecordingDetails
-        struct RecordingDetails: Codable {
         }
     }
     

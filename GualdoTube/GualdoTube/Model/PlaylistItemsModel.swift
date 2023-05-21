@@ -24,7 +24,7 @@ struct PlaylistItemsModel: Codable {
         
         // MARK: - Snippet
         struct Snippet: Codable {
-            let publishedAt: Date
+            let publishedAt: String
             let channelId: String
             let title: String
             let description: String
@@ -38,11 +38,19 @@ struct PlaylistItemsModel: Codable {
             
             // MARK: - Thumbnails
             struct Thumbnails: Codable {
-                let ´default´: Default
+                let defaultSize: Default
                 let medium: Default
                 let high: Default
                 let standard: Default
                 let maxres: Default
+                
+                enum CodingKeys: String, CodingKey {
+                    case defaultSize = "default"
+                    case medium
+                    case high
+                    case standard
+                    case maxres
+                }
                 
                 // MARK: - Default
                 struct Default: Codable {
@@ -62,7 +70,7 @@ struct PlaylistItemsModel: Codable {
         // MARK: - ContentDetails
         struct ContentDetails: Codable {
             let videoId: String
-            let videoPublishedAt: Date
+            let videoPublishedAt: String
         }
     }
     

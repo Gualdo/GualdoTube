@@ -43,7 +43,7 @@ class ServiceLayer {
                 return decodedData
             } catch {
                 print(error)
-                throw NetworkError.generic
+                throw NetworkError.couldNotDecodeData
             }
         }
     }

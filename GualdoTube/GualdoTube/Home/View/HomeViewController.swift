@@ -13,6 +13,10 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        Task {
+            await presenter.getHomeObjects()
+        }
     }
 }
 

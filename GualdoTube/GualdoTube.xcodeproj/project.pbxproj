@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D3F3EE32A17C54A009CB0AF /* PlaylistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3EE22A17C54A009CB0AF /* PlaylistModel.swift */; };
+		2D3F3EE32A17C54A009CB0AF /* PlaylistsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3EE22A17C54A009CB0AF /* PlaylistsModel.swift */; };
 		2D3F3EE52A17D6B7009CB0AF /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3EE42A17D6B7009CB0AF /* VideoModel.swift */; };
 		2D3F3EE72A183665009CB0AF /* PlaylistItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3EE62A183665009CB0AF /* PlaylistItemsModel.swift */; };
 		2D3F3EE92A1838B3009CB0AF /* ChannelsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3EE82A1838B3009CB0AF /* ChannelsModel.swift */; };
@@ -38,7 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2D3F3EE22A17C54A009CB0AF /* PlaylistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModel.swift; sourceTree = "<group>"; };
+		2D3F3EE22A17C54A009CB0AF /* PlaylistsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsModel.swift; sourceTree = "<group>"; };
 		2D3F3EE42A17D6B7009CB0AF /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		2D3F3EE62A183665009CB0AF /* PlaylistItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItemsModel.swift; sourceTree = "<group>"; };
 		2D3F3EE82A1838B3009CB0AF /* ChannelsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsModel.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		2D3F3EE12A17C528009CB0AF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2D3F3EE22A17C54A009CB0AF /* PlaylistModel.swift */,
+				2D3F3EE22A17C54A009CB0AF /* PlaylistsModel.swift */,
 				2D3F3EE42A17D6B7009CB0AF /* VideoModel.swift */,
 				2D3F3EE62A183665009CB0AF /* PlaylistItemsModel.swift */,
 				2D3F3EE82A1838B3009CB0AF /* ChannelsModel.swift */,
@@ -321,7 +321,7 @@
 				2D6FC6182A1659EE00436F02 /* ViewController.swift in Sources */,
 				2D3F3EFE2A183CDD009CB0AF /* PlaylistsViewController.swift in Sources */,
 				2D3F3F0E2A184532009CB0AF /* RequestModel.swift in Sources */,
-				2D3F3EE32A17C54A009CB0AF /* PlaylistModel.swift in Sources */,
+				2D3F3EE32A17C54A009CB0AF /* PlaylistsModel.swift in Sources */,
 				2D6FC6142A1659EE00436F02 /* AppDelegate.swift in Sources */,
 				2D3F3EF22A183C75009CB0AF /* HomeViewController.swift in Sources */,
 				2D3F3EE52A17D6B7009CB0AF /* VideoModel.swift in Sources */,

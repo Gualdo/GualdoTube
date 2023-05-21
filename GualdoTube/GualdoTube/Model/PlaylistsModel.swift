@@ -1,5 +1,5 @@
 //
-//  PlaylistModel.swift
+//  PlaylistsModel.swift
 //  GualdoTube
 //
 //  Created by Eduardo De La Cruz on 19/5/23.
@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - PlaylistModel
-struct PlaylistModel: Decodable {
+struct PlaylistsModel: Decodable {
     let kind: String
     let etag: String
     let nextPageToken: String
@@ -41,14 +41,10 @@ struct PlaylistModel: Decodable {
             
             // MARK: - Thumbnails
             struct Thumbnails: Decodable {
-                let ´default´: ThumbnailsCharacteristics
-                let medium: ThumbnailsCharacteristics
-                let high: ThumbnailsCharacteristics
-                let standard: ThumbnailsCharacteristics
-                let maxres: ThumbnailsCharacteristics
+                let medium: Default
                 
                 // MARK: - ThumbnailsCharacteristics
-                struct ThumbnailsCharacteristics: Decodable {
+                struct Default: Decodable {
                     let url: String
                     let width: Int
                     let height: Int

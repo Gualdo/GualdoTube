@@ -10,7 +10,7 @@ import Foundation
 protocol HomeProviderProtocol {
     func getVideos(searchString: String, channelId: String) async throws -> VideoModel
     func getChannel(channelId: String) async throws -> ChannelsModel
-    func getPlaylists(channelId: String) async throws -> PlaylistModel
+    func getPlaylists(channelId: String) async throws -> PlaylistsModel
     func getPlaylistItems(playlistId: String) async throws -> PlaylistItemsModel
 }
 
@@ -21,7 +21,7 @@ class HomeProvider {
 extension HomeProvider: HomeProviderProtocol {
     
     func getVideos(searchString: String, channelId: String) async throws -> VideoModel {
-        var queryParams: [String: String] = ["part": "snippet"]
+        var queryParams: [String: String] = ["part": "snippet", "type": "video"]
         
         if !channelId.isEmpty {
             queryParams["channelId"] = channelId
@@ -55,14 +55,14 @@ extension HomeProvider: HomeProviderProtocol {
         }
     }
     
-    func getPlaylists(channelId: String) async throws -> PlaylistModel {
+    func getPlaylists(channelId: String) async throws -> PlaylistsModel {
         let queryParams: [String: String] = ["part": "snippet,contentDetails",
                                              "channelId": channelId]
         
-        let requestModel = RequestModel(endpoint: .playlist, queryItems: queryParams)
+        let requestModel = RequestModel(endpoint: .playlists, queryItems: queryParams)
         
         do {
-            return try await ServiceLayer.callService(requestModel, PlaylistModel.self)
+            return try await ServiceLayer.callService(requestModel, PlaylistsModel.self)
         } catch {
             print(error)
             throw error
