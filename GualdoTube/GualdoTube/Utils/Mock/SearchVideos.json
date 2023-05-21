@@ -1,0 +1,231 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "_b3y0FWj0rcY0_H9OUu8WIYv9qY",
+    "nextPageToken": "CAUQAA",
+    "pageInfo": {
+        "totalResults": 123,
+        "resultsPerPage": 5
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "00G4fjnRbpPR8D6NPPVDA5Np4BY",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "FF0isq7rr0M"
+            },
+            "snippet": {
+                "publishedAt": "2023-02-08T18:04:54Z",
+                "channelId": "UCqtcCFjSms3mLpO2oo0aGjA",
+                "title": "TECHO PROPIO 2023| Todo lo que tienes que saber: Bono Habitación  Familiar, Requisitos y postulación",
+                "description": "Techo Propio 2023.\n\nAquí te informamos todo lo que necesitas saber de este programa del Estado.\n\n¿Quiénes acceden?\n¿Cuáles son los requisitos?\n¿Cuántos bonos hay?\n¿Cómo se solicita?\n¿Cómo se inscribe?\n\nLINK Para conocer los centros autorizados de inscripción: https://www.mivivienda.com.pe/portalweb/fondo-mivivienda/pagina.aspx?idpage=5\n\nLINK Para buscar los proyectos: https://www.mivivienda.com.pe/PortalWEB/usuario-busca-viviendas/buscador-detalle.aspx?op=nstp&nom=&dep=LIMA&pro=LIMA&dis=--Seleccione--&amin=&amax=&almin=&almax=&pmin=&pmax=&bv=0&exp=0",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/FF0isq7rr0M/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/FF0isq7rr0M/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/FF0isq7rr0M/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/FF0isq7rr0M/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/FF0isq7rr0M/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "TRIBUTA y CONSULTA",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-02-08T18:04:54Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "GbQPhGRl3YDglBeUmX9F9WRDCPg",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "F9yBDXXXEY8"
+            },
+            "snippet": {
+                "publishedAt": "2021-07-15T14:36:50Z",
+                "channelId": "UCa3BK6QMcxdsVUXvYL1TwEg",
+                "title": "Entrevista a la Directora Ejecutiva del programa Juntos en TV Perú",
+                "description": "Directora ejecutiva del programa Juntos, Jessica Niño de Guzmán habla sobre el trabajo que realiza el programa Juntos, en beneficio de los hogares más vulnerables del país.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/F9yBDXXXEY8/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/F9yBDXXXEY8/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/F9yBDXXXEY8/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/F9yBDXXXEY8/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/F9yBDXXXEY8/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "MIDISJUNTOS",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-07-15T14:36:50Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "pCinztGC2VLPC6Wo_ObZU--wtfQ",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "KHsiPzXfgFA"
+            },
+            "snippet": {
+                "publishedAt": "2023-02-10T14:55:44Z",
+                "channelId": "UCa3BK6QMcxdsVUXvYL1TwEg",
+                "title": "¿Qué es el programa Juntos?",
+                "description": "➡️ Conoce en qué consiste el programa social que promueve el acceso a los servicios de salud y educación en hogares en situación de pobreza y pobreza extrema, en el Perú.\n\n✅ Línea gratuita de consultas: 1880\n✅ Página web: https://www.gob.pe/juntos\n✅ Facebook: https://www.facebook.com/MidisJuntos/\n✅ Instagram: https://www.instagram.com/midisjuntos/\n✅Tik Tok: https://www.tiktok.com/@juntosprograma",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/KHsiPzXfgFA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/KHsiPzXfgFA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/KHsiPzXfgFA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/KHsiPzXfgFA/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/KHsiPzXfgFA/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "MIDISJUNTOS",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-02-10T14:55:44Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "c8HDlqOfM0sH9NythjSap3BiT5w",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "vZaDNEa8Tyo"
+            },
+            "snippet": {
+                "publishedAt": "2019-09-16T17:35:48Z",
+                "channelId": "UCa3BK6QMcxdsVUXvYL1TwEg",
+                "title": "Pasos para utilizar el aplicativo Mi Juntos",
+                "description": "Conoce #MiJuntos, el nuevo aplicativo que el programa #Juntos ha desarrollado para que nuestras usuarias y usuarios puedan conocer de forma rápida y segura la fecha de sus abonos, así como el cumplimiento de sus compromisos en salud y educación.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/vZaDNEa8Tyo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/vZaDNEa8Tyo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/vZaDNEa8Tyo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/vZaDNEa8Tyo/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/vZaDNEa8Tyo/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "MIDISJUNTOS",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-09-16T17:35:48Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "y8zze93a8E8yNHDm95FlWW5tFn8",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "OvXC-CjmULI"
+            },
+            "snippet": {
+                "publishedAt": "2023-03-21T10:08:37Z",
+                "channelId": "UCo1qaAT0Zbq8KJtC0sd_pIg",
+                "title": "Bono Marzo 2023: Aprueban Duplicar Monto y Anuncian Nuevos Beneficios",
+                "description": "Finalmente fue aprobado el proyecto que duplica el monto del Aporte Familiar Permanente o ex Bono Marzo. Además se creó el Bolsillo Familiar Electrónico, aumentó permanentemente la Asignación Familiar y Maternal (AF) y el Subsidio Único Familiar (SUF). Ahora solo falta que se convierta en Ley.\n\nDetalla esta  información aquí: https://bonosdelgobierno.com/bono-marzo-aprueban-duplicar-el-monto-del-beneficio-y-entregan-otras-ayudas-economicas/\n\nPara más información de este y otros beneficios del Gobierno de Chile visita: https://bonosdelgobierno.com\n\n#bonomarzo #bonomarzo2023 #bonosdelgobierno #chile",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/OvXC-CjmULI/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/OvXC-CjmULI/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/OvXC-CjmULI/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/OvXC-CjmULI/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/OvXC-CjmULI/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Bonos del Gobierno",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-03-21T10:08:37Z"
+            }
+        }
+    ]
+}
