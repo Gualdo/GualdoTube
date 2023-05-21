@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - ChannelsModel
-struct ChannelsModel: Codable {
+struct ChannelModel: Codable {
     let kind: String
     let etag: String
     let pageInfo: PageInfo

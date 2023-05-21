@@ -10,7 +10,7 @@
 		2D3F3EE32A17C54A009CB0AF /* PlaylistsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3EE22A17C54A009CB0AF /* PlaylistsModel.swift */; };
 		2D3F3EE52A17D6B7009CB0AF /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3EE42A17D6B7009CB0AF /* VideoModel.swift */; };
 		2D3F3EE72A183665009CB0AF /* PlaylistItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3EE62A183665009CB0AF /* PlaylistItemsModel.swift */; };
-		2D3F3EE92A1838B3009CB0AF /* ChannelsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3EE82A1838B3009CB0AF /* ChannelsModel.swift */; };
+		2D3F3EE92A1838B3009CB0AF /* ChannelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3EE82A1838B3009CB0AF /* ChannelModel.swift */; };
 		2D3F3EEC2A183B0A009CB0AF /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3EEB2A183B0A009CB0AF /* RootPageViewController.swift */; };
 		2D3F3EEE2A183B25009CB0AF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3EED2A183B25009CB0AF /* MainViewController.swift */; };
 		2D3F3EF22A183C75009CB0AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3F3EF02A183C75009CB0AF /* HomeViewController.swift */; };
@@ -41,7 +41,7 @@
 		2D3F3EE22A17C54A009CB0AF /* PlaylistsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsModel.swift; sourceTree = "<group>"; };
 		2D3F3EE42A17D6B7009CB0AF /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		2D3F3EE62A183665009CB0AF /* PlaylistItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItemsModel.swift; sourceTree = "<group>"; };
-		2D3F3EE82A1838B3009CB0AF /* ChannelsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsModel.swift; sourceTree = "<group>"; };
+		2D3F3EE82A1838B3009CB0AF /* ChannelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelModel.swift; sourceTree = "<group>"; };
 		2D3F3EEB2A183B0A009CB0AF /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 		2D3F3EED2A183B25009CB0AF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2D3F3EF02A183C75009CB0AF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 				2D3F3EE22A17C54A009CB0AF /* PlaylistsModel.swift */,
 				2D3F3EE42A17D6B7009CB0AF /* VideoModel.swift */,
 				2D3F3EE62A183665009CB0AF /* PlaylistItemsModel.swift */,
-				2D3F3EE82A1838B3009CB0AF /* ChannelsModel.swift */,
+				2D3F3EE82A1838B3009CB0AF /* ChannelModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,7 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D3F3EE92A1838B3009CB0AF /* ChannelsModel.swift in Sources */,
+				2D3F3EE92A1838B3009CB0AF /* ChannelModel.swift in Sources */,
 				2D3F3F0C2A184476009CB0AF /* NetworkError.swift in Sources */,
 				2D3F3EE72A183665009CB0AF /* PlaylistItemsModel.swift in Sources */,
 				2D3F3F192A18537B009CB0AF /* HomePresenter.swift in Sources */,

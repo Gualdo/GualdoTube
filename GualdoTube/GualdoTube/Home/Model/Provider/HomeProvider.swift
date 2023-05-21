@@ -9,7 +9,7 @@ import Foundation
 
 protocol HomeProviderProtocol {
     func getVideos(searchString: String, channelId: String) async throws -> VideoModel
-    func getChannel(channelId: String) async throws -> ChannelsModel
+    func getChannel(channelId: String) async throws -> ChannelModel
     func getPlaylists(channelId: String) async throws -> PlaylistsModel
     func getPlaylistItems(playlistId: String) async throws -> PlaylistItemsModel
 }
@@ -41,14 +41,14 @@ extension HomeProvider: HomeProviderProtocol {
         }
     }
     
-    func getChannel(channelId: String) async throws -> ChannelsModel {
+    func getChannel(channelId: String) async throws -> ChannelModel {
         let queryParams: [String: String] = ["part": "snippet,statistics,brandingSettings",
                                              "id": channelId]
         
         let requestModel = RequestModel(endpoint: .channles, queryItems: queryParams)
         
         do {
-            return try await ServiceLayer.callService(requestModel, ChannelsModel.self)
+            return try await ServiceLayer.callService(requestModel, ChannelModel.self)
         } catch {
             print(error)
             throw error
