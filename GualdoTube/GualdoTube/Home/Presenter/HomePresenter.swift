@@ -15,6 +15,8 @@ class HomePresenter {
     
     weak var delegate: HomeViewProtocol?
     
+    private var objectList: [[Any]] = []
+    
     var provider: HomeProviderProtocol
     
     init(delegate: HomeViewProtocol, provider: HomeProviderProtocol = HomeProvider()) {
@@ -22,7 +24,22 @@ class HomePresenter {
         self.provider = provider
     }
     
-    func getVideos() {
+    func getVideos() async {
+        objectList.removeAll()
         
+        do {
+            let channel = try await provider.getChannel(channelId: Constants.channelId).items
+            let playlists = try await provider.getPlaylists(channelId: Constants.channelId).items
+            let videos = try await provider.getVideos(searchString: "", channelId: Constants.channelId).items
+            let playlistItems = try await provider.getPlaylistItems(playlistId: playlists.first?.id ?? "").items
+            
+            objectList.append(channel)
+            objectList.append(playlistItems)
+            objectList.append(videos)
+            objectList.append(playlists)
+        }
+        catch {
+            print(error)
+        }
     }
 }
