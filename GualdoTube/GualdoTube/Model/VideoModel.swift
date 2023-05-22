@@ -64,8 +64,8 @@ struct VideoModel: Decodable {
             
             // MARK: - Thumbnails
             struct Thumbnails: Codable {
-                let medium: Default
-                let high: Default
+                let medium: Default?
+                let high: Default?
                 
                 // MARK: - Default
                 struct Default: Codable {
