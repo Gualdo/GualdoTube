@@ -56,15 +56,17 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let item = objectList[indexPath.section]
+        
         if let channel = item as? [ChannelModel.Item] {
             
             guard let channelCell = tableView.dequeueReusableCell(withIdentifier: "\(ChannelCell.self)", for: indexPath) as? ChannelCell else {
                 return UITableViewCell()
             }
-            
+
             channelCell.configCell(model: channel[indexPath.row])
-            
+
             return channelCell
             
         } else if let playlistItem = item as? [PlaylistItemsModel.Item] {
