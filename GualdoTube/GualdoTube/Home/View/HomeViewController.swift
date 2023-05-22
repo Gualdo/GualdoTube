@@ -9,9 +9,14 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBOutlet weak var tableViewHome: UITableView!
+    lazy var tableViewHome: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .grouped)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.backgroundColor = UIColor(named: "backgroundColor")
+        return tableView
+    }()
     
-    lazy var  presenter = HomePresenter(delegate: self)
+    lazy var presenter = HomePresenter(delegate: self)
     
     private var objectList: [[Any]] = []
     private var sectionTitleList: [String] = []
@@ -27,8 +32,17 @@ class HomeViewController: UIViewController {
     }
     
     func configTableView() {
-        let nibChannel = UINib(nibName: "\(ChannelCell.self)", bundle: nil)
-        tableViewHome.register(nibChannel, forCellReuseIdentifier: "\(ChannelCell.self)")
+        
+        view.addSubview(tableViewHome)
+        
+        NSLayoutConstraint.activate([
+            tableViewHome.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            tableViewHome.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tableViewHome.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            tableViewHome.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
+        
+        tableViewHome.register(ChannelCell.self, forCellReuseIdentifier: "\(ChannelCell.self)")
         
         let nibVideo = UINib(nibName: "\(VideoCell.self)", bundle: nil)
         tableViewHome.register(nibVideo, forCellReuseIdentifier: "\(VideoCell.self)")
