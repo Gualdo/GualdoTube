@@ -37,7 +37,6 @@
 		2D423C172A1ABB8C00B848F8 /* VideoOnlyOne.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D423C162A1ABB8C00B848F8 /* VideoOnlyOne.json */; };
 		2D423C192A1AC36100B848F8 /* MockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D423C182A1AC36100B848F8 /* MockManager.swift */; };
 		2D423C212A1AC48B00B848F8 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D423C1F2A1AC48B00B848F8 /* VideoCell.swift */; };
-		2D423C222A1AC48B00B848F8 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D423C202A1AC48B00B848F8 /* VideoCell.xib */; };
 		2D423C252A1AC4A600B848F8 /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D423C232A1AC4A600B848F8 /* PlaylistCell.swift */; };
 		2D423C262A1AC4A600B848F8 /* PlaylistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D423C242A1AC4A600B848F8 /* PlaylistCell.xib */; };
 		2D47C4512A1AF2D30090AB49 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2D47C4502A1AF2D30090AB49 /* Kingfisher */; };
@@ -81,7 +80,6 @@
 		2D423C162A1ABB8C00B848F8 /* VideoOnlyOne.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = VideoOnlyOne.json; sourceTree = "<group>"; };
 		2D423C182A1AC36100B848F8 /* MockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockManager.swift; sourceTree = "<group>"; };
 		2D423C1F2A1AC48B00B848F8 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
-		2D423C202A1AC48B00B848F8 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		2D423C232A1AC4A600B848F8 /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
 		2D423C242A1AC4A600B848F8 /* PlaylistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistCell.xib; sourceTree = "<group>"; };
 		2D67EAA42A1B4CB10036A463 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
@@ -262,7 +260,6 @@
 			isa = PBXGroup;
 			children = (
 				2D423C1F2A1AC48B00B848F8 /* VideoCell.swift */,
-				2D423C202A1AC48B00B848F8 /* VideoCell.xib */,
 			);
 			path = VideoCell;
 			sourceTree = "<group>";
@@ -379,7 +376,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D423C222A1AC48B00B848F8 /* VideoCell.xib in Resources */,
 				2D3F3EFF2A183CDD009CB0AF /* PlaylistsViewController.xib in Resources */,
 				2D423C152A1ABA4100B848F8 /* SearchVideos.json in Resources */,
 				2D423C262A1AC4A600B848F8 /* PlaylistCell.xib in Resources */,
@@ -583,6 +579,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -611,6 +608,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

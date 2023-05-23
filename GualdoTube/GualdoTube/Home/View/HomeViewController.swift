@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = UIColor(named: "backgroundColor")
+        tableView.separatorStyle = .none
         return tableView
     }()
     
@@ -43,9 +44,7 @@ class HomeViewController: UIViewController {
         ])
         
         tableViewHome.register(ChannelCell.self, forCellReuseIdentifier: "\(ChannelCell.self)")
-        
-        let nibVideo = UINib(nibName: "\(VideoCell.self)", bundle: nil)
-        tableViewHome.register(nibVideo, forCellReuseIdentifier: "\(VideoCell.self)")
+        tableViewHome.register(VideoCell.self, forCellReuseIdentifier: "\(VideoCell.self)")
         
         let nibPlaylist = UINib(nibName: "\(PlaylistCell.self)", bundle: nil)
         tableViewHome.register(nibPlaylist, forCellReuseIdentifier: "\(PlaylistCell.self)")
@@ -89,6 +88,8 @@ extension HomeViewController: UITableViewDataSource {
                 return UITableViewCell()
             }
             
+            playlistItemCell.configCell(model: playlistItem[indexPath.row])
+            
             return playlistItemCell
             
         } else if let videos = item as? [VideoModel.Item] {
@@ -96,6 +97,8 @@ extension HomeViewController: UITableViewDataSource {
             guard let videoCell = tableView.dequeueReusableCell(withIdentifier: "\(VideoCell.self)", for: indexPath) as? VideoCell else {
                 return UITableViewCell()
             }
+            
+            videoCell.configCell(model: videos[indexPath.row])
             
             return videoCell
             
@@ -113,6 +116,21 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionTitleList[section]
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 1 || indexPath.section == 2 {
+            return 95.0
+        }
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return .leastNormalMagnitude
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return nil
     }
 }
 

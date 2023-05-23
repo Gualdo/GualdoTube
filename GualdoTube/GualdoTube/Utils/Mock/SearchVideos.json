@@ -1,230 +1,181 @@
 {
     "kind": "youtube#searchListResponse",
-    "etag": "_b3y0FWj0rcY0_H9OUu8WIYv9qY",
+    "etag": "F3hwx3U-OPN0iy5d0YGbyqXVjvA",
     "nextPageToken": "CAUQAA",
+    "regionCode": "ES",
     "pageInfo": {
-        "totalResults": 123,
+        "totalResults": 96,
         "resultsPerPage": 5
     },
     "items": [
         {
             "kind": "youtube#searchResult",
-            "etag": "00G4fjnRbpPR8D6NPPVDA5Np4BY",
+            "etag": "VY8Y7IPU5IC0i7TVq9fQOFNluFo",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "FF0isq7rr0M"
+                "videoId": "v7NEplM3ZrY"
             },
             "snippet": {
-                "publishedAt": "2023-02-08T18:04:54Z",
-                "channelId": "UCqtcCFjSms3mLpO2oo0aGjA",
-                "title": "TECHO PROPIO 2023| Todo lo que tienes que saber: Bono Habitación  Familiar, Requisitos y postulación",
-                "description": "Techo Propio 2023.\n\nAquí te informamos todo lo que necesitas saber de este programa del Estado.\n\n¿Quiénes acceden?\n¿Cuáles son los requisitos?\n¿Cuántos bonos hay?\n¿Cómo se solicita?\n¿Cómo se inscribe?\n\nLINK Para conocer los centros autorizados de inscripción: https://www.mivivienda.com.pe/portalweb/fondo-mivivienda/pagina.aspx?idpage=5\n\nLINK Para buscar los proyectos: https://www.mivivienda.com.pe/PortalWEB/usuario-busca-viviendas/buscador-detalle.aspx?op=nstp&nom=&dep=LIMA&pro=LIMA&dis=--Seleccione--&amin=&amax=&almin=&almax=&pmin=&pmax=&bv=0&exp=0",
+                "publishedAt": "2021-10-05T05:00:16Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Patrón de diseño Delegation en Swift 2/3 *Tutorial*",
+                "description": "En esta segunda parte te explico qué es el patrón de diseño Delegation y cómo puedes utilizarlo en tu App. Te muestro varios ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/FF0isq7rr0M/default.jpg",
+                        "url": "https://i.ytimg.com/vi/v7NEplM3ZrY/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/FF0isq7rr0M/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/v7NEplM3ZrY/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/FF0isq7rr0M/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/v7NEplM3ZrY/hqdefault.jpg",
                         "width": 480,
                         "height": 360
-                    },
-                    "standard": {
-                        "url": "https://i.ytimg.com/vi/FF0isq7rr0M/sddefault.jpg",
-                        "width": 640,
-                        "height": 480
-                    },
-                    "maxres": {
-                        "url": "https://i.ytimg.com/vi/FF0isq7rr0M/maxresdefault.jpg",
-                        "width": 1280,
-                        "height": 720
                     }
                 },
-                "channelTitle": "TRIBUTA y CONSULTA",
+                "channelTitle": "Victor Roldan Dev",
                 "liveBroadcastContent": "none",
-                "publishTime": "2023-02-08T18:04:54Z"
+                "publishTime": "2021-10-05T05:00:16Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "GbQPhGRl3YDglBeUmX9F9WRDCPg",
+            "etag": "Xm6yPW0ZHu4LFmJD4E6zIBwYyIM",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "F9yBDXXXEY8"
+                "videoId": "BhM_dovPUmM"
             },
             "snippet": {
-                "publishedAt": "2021-07-15T14:36:50Z",
-                "channelId": "UCa3BK6QMcxdsVUXvYL1TwEg",
-                "title": "Entrevista a la Directora Ejecutiva del programa Juntos en TV Perú",
-                "description": "Directora ejecutiva del programa Juntos, Jessica Niño de Guzmán habla sobre el trabajo que realiza el programa Juntos, en beneficio de los hogares más vulnerables del país.",
+                "publishedAt": "2021-10-26T05:00:04Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Manejo de Memoria ARC - Value Type y Reference Type 🔥 - iOS - Swift 1/3",
+                "description": "Este es el primer video vide de una serie completa dónde explico en detalle todo lo relacionado al manejo de memoria ARC en el ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/F9yBDXXXEY8/default.jpg",
+                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/F9yBDXXXEY8/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/F9yBDXXXEY8/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/hqdefault.jpg",
                         "width": 480,
                         "height": 360
-                    },
-                    "standard": {
-                        "url": "https://i.ytimg.com/vi/F9yBDXXXEY8/sddefault.jpg",
-                        "width": 640,
-                        "height": 480
-                    },
-                    "maxres": {
-                        "url": "https://i.ytimg.com/vi/F9yBDXXXEY8/maxresdefault.jpg",
-                        "width": 1280,
-                        "height": 720
                     }
                 },
-                "channelTitle": "MIDISJUNTOS",
+                "channelTitle": "Victor Roldan Dev",
                 "liveBroadcastContent": "none",
-                "publishTime": "2021-07-15T14:36:50Z"
+                "publishTime": "2021-10-26T05:00:04Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "pCinztGC2VLPC6Wo_ObZU--wtfQ",
+            "etag": "cnSssDLgob6FESlWPzSDVgKoDPg",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "KHsiPzXfgFA"
+                "videoId": "SWEAnN6XJsw"
             },
             "snippet": {
-                "publishedAt": "2023-02-10T14:55:44Z",
-                "channelId": "UCa3BK6QMcxdsVUXvYL1TwEg",
-                "title": "¿Qué es el programa Juntos?",
-                "description": "➡️ Conoce en qué consiste el programa social que promueve el acceso a los servicios de salud y educación en hogares en situación de pobreza y pobreza extrema, en el Perú.\n\n✅ Línea gratuita de consultas: 1880\n✅ Página web: https://www.gob.pe/juntos\n✅ Facebook: https://www.facebook.com/MidisJuntos/\n✅ Instagram: https://www.instagram.com/midisjuntos/\n✅Tik Tok: https://www.tiktok.com/@juntosprograma",
+                "publishedAt": "2022-07-26T14:00:16Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "12 - Como crear un TabView - Xcode 14 - iOS 16 - Curso de SwiftUI para Principiantes",
+                "description": "En este video te explico como crear un TabView en SwiftUI. En esta serie de videos vamos a dar un recorrido muchos ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/KHsiPzXfgFA/default.jpg",
+                        "url": "https://i.ytimg.com/vi/SWEAnN6XJsw/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/KHsiPzXfgFA/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/SWEAnN6XJsw/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/KHsiPzXfgFA/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/SWEAnN6XJsw/hqdefault.jpg",
                         "width": 480,
                         "height": 360
-                    },
-                    "standard": {
-                        "url": "https://i.ytimg.com/vi/KHsiPzXfgFA/sddefault.jpg",
-                        "width": 640,
-                        "height": 480
-                    },
-                    "maxres": {
-                        "url": "https://i.ytimg.com/vi/KHsiPzXfgFA/maxresdefault.jpg",
-                        "width": 1280,
-                        "height": 720
                     }
                 },
-                "channelTitle": "MIDISJUNTOS",
+                "channelTitle": "Victor Roldan Dev",
                 "liveBroadcastContent": "none",
-                "publishTime": "2023-02-10T14:55:44Z"
+                "publishTime": "2022-07-26T14:00:16Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "c8HDlqOfM0sH9NythjSap3BiT5w",
+            "etag": "NwmYMMRxPUyBpdZr_2Ni2VQw8CM",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "vZaDNEa8Tyo"
+                "videoId": "v1mWkw7Lito"
             },
             "snippet": {
-                "publishedAt": "2019-09-16T17:35:48Z",
-                "channelId": "UCa3BK6QMcxdsVUXvYL1TwEg",
-                "title": "Pasos para utilizar el aplicativo Mi Juntos",
-                "description": "Conoce #MiJuntos, el nuevo aplicativo que el programa #Juntos ha desarrollado para que nuestras usuarias y usuarios puedan conocer de forma rápida y segura la fecha de sus abonos, así como el cumplimiento de sus compromisos en salud y educación.",
+                "publishedAt": "2022-03-05T05:00:19Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "1- Curso de Swift iOS 15 desde CERO - Xcode 13 - 2022",
+                "description": "CLONANDO YOUTUBE *Curso de Swift* iOS 15 desde CERO Español 2022. Inroducción y Demo. Este es el primer video de una ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/vZaDNEa8Tyo/default.jpg",
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/vZaDNEa8Tyo/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/vZaDNEa8Tyo/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/hqdefault.jpg",
                         "width": 480,
                         "height": 360
-                    },
-                    "standard": {
-                        "url": "https://i.ytimg.com/vi/vZaDNEa8Tyo/sddefault.jpg",
-                        "width": 640,
-                        "height": 480
-                    },
-                    "maxres": {
-                        "url": "https://i.ytimg.com/vi/vZaDNEa8Tyo/maxresdefault.jpg",
-                        "width": 1280,
-                        "height": 720
                     }
                 },
-                "channelTitle": "MIDISJUNTOS",
+                "channelTitle": "Victor Roldan Dev",
                 "liveBroadcastContent": "none",
-                "publishTime": "2019-09-16T17:35:48Z"
+                "publishTime": "2022-03-05T05:00:19Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "y8zze93a8E8yNHDm95FlWW5tFn8",
+            "etag": "an9JsXsI5ORajFOBgay8giY5gl4",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "OvXC-CjmULI"
+                "videoId": "zalh4iGoplU"
             },
             "snippet": {
-                "publishedAt": "2023-03-21T10:08:37Z",
-                "channelId": "UCo1qaAT0Zbq8KJtC0sd_pIg",
-                "title": "Bono Marzo 2023: Aprueban Duplicar Monto y Anuncian Nuevos Beneficios",
-                "description": "Finalmente fue aprobado el proyecto que duplica el monto del Aporte Familiar Permanente o ex Bono Marzo. Además se creó el Bolsillo Familiar Electrónico, aumentó permanentemente la Asignación Familiar y Maternal (AF) y el Subsidio Único Familiar (SUF). Ahora solo falta que se convierta en Ley.\n\nDetalla esta  información aquí: https://bonosdelgobierno.com/bono-marzo-aprueban-duplicar-el-monto-del-beneficio-y-entregan-otras-ayudas-economicas/\n\nPara más información de este y otros beneficios del Gobierno de Chile visita: https://bonosdelgobierno.com\n\n#bonomarzo #bonomarzo2023 #bonosdelgobierno #chile",
+                "publishedAt": "2021-10-05T05:00:17Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Que son y como funcionan los Protocols en Swift 1/3 *Tutorial*",
+                "description": "En esta primera parte te explico desde cero cómo puedes comenzar a utilizar protocols en swift. Sintaxis, Métodos Opcionales ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/OvXC-CjmULI/default.jpg",
+                        "url": "https://i.ytimg.com/vi/zalh4iGoplU/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/OvXC-CjmULI/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/zalh4iGoplU/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/OvXC-CjmULI/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/zalh4iGoplU/hqdefault.jpg",
                         "width": 480,
                         "height": 360
-                    },
-                    "standard": {
-                        "url": "https://i.ytimg.com/vi/OvXC-CjmULI/sddefault.jpg",
-                        "width": 640,
-                        "height": 480
-                    },
-                    "maxres": {
-                        "url": "https://i.ytimg.com/vi/OvXC-CjmULI/maxresdefault.jpg",
-                        "width": 1280,
-                        "height": 720
                     }
                 },
-                "channelTitle": "Bonos del Gobierno",
+                "channelTitle": "Victor Roldan Dev",
                 "liveBroadcastContent": "none",
-                "publishTime": "2023-03-21T10:08:37Z"
+                "publishTime": "2021-10-05T05:00:17Z"
             }
         }
     ]

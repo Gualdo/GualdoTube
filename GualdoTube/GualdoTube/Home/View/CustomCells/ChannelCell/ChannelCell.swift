@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ChannelCell: UITableViewCell {
     
     lazy var bannerImage: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "channelBanner"))
+        let imageView = UIImageView(frame: .zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
@@ -18,7 +19,7 @@ class ChannelCell: UITableViewCell {
     }()
     
     lazy var profileImage: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "channelProfile"))
+        let imageView = UIImageView(frame: .zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
@@ -143,11 +144,11 @@ class ChannelCell: UITableViewCell {
         view.addSubview(chevronRightImage)
         
         NSLayoutConstraint.activate([
-            channelInfoLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 8),
+            channelInfoLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             channelInfoLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 9),
             channelInfoLabel.trailingAnchor.constraint(equalTo: chevronRightImage.leadingAnchor, constant: -3),
             channelInfoLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -9),
-            chevronRightImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8),
+            chevronRightImage.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             chevronRightImage.heightAnchor.constraint(equalToConstant: 20),
             chevronRightImage.widthAnchor.constraint(equalToConstant: 10),
             chevronRightImage.centerYAnchor.constraint(equalTo: channelInfoLabel.centerYAnchor)
@@ -164,7 +165,6 @@ class ChannelCell: UITableViewCell {
                                                        infoChevronContainer])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
-        stackView.distribution = .fillProportionally
         stackView.backgroundColor = UIColor(named: "backgroundColor")
         return stackView
     }()
@@ -190,9 +190,9 @@ class ChannelCell: UITableViewCell {
             bannerImage.topAnchor.constraint(equalTo: self.topAnchor),
             bannerImage.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             bannerImage.heightAnchor.constraint(equalToConstant: 104),
-            profileStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            profileStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 8),
             profileStackView.topAnchor.constraint(equalTo: bannerImage.bottomAnchor),
-            profileStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            profileStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -8),
             profileStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
         ])
     }
@@ -201,5 +201,7 @@ class ChannelCell: UITableViewCell {
         channelTitle.text = model.snippet.title
         subscriberNumbersLabel.text = "\(model.statistics?.subscriberCount ?? "0") subscribers - \(model.statistics?.videoCount ?? "0") videos"
         channelInfoLabel.text = model.snippet.description
+        bannerImage.kf.setImage(with: URL(string: model.brandingSettings.image.bannerExternalUrl))
+        profileImage.kf.setImage(with: URL(string: model.snippet.thumbnails.medium.url))
     }
 }
