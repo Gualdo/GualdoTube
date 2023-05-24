@@ -47,6 +47,8 @@
 		2D6FC61D2A1659EF00436F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FC61C2A1659EF00436F02 /* Assets.xcassets */; };
 		2D6FC6202A1659EF00436F02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FC61E2A1659EF00436F02 /* LaunchScreen.storyboard */; };
 		2DDD2D482A1E53E3008A8A5C /* SectionTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD2D472A1E53E3008A8A5C /* SectionTitleView.swift */; };
+		2DDD2D4B2A1E5AF0008A8A5C /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD2D4A2A1E5AF0008A8A5C /* BottomSheetViewController.swift */; };
+		2DDD2D4E2A1EC49E008A8A5C /* UIview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDD2D4D2A1EC49E008A8A5C /* UIview+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +93,8 @@
 		2D6FC61F2A1659EF00436F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D6FC6212A1659EF00436F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DDD2D472A1E53E3008A8A5C /* SectionTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleView.swift; sourceTree = "<group>"; };
+		2DDD2D4A2A1E5AF0008A8A5C /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		2DDD2D4D2A1EC49E008A8A5C /* UIview+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIview+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,7 @@
 		2D3F3F0F2A1846A7009CB0AF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2DDD2D4C2A1EC483008A8A5C /* Extensions */,
 				2D423C0B2A1AB82900B848F8 /* Mock */,
 				2D3F3F102A1846BB009CB0AF /* Constants.swift */,
 				2D423C182A1AC36100B848F8 /* MockManager.swift */,
@@ -203,6 +208,7 @@
 		2D3F3F132A185133009CB0AF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2DDD2D492A1E5ABC008A8A5C /* BottomSheet */,
 				2D423C1A2A1AC44000B848F8 /* CustomCells */,
 				2D3F3EF02A183C75009CB0AF /* HomeViewController.swift */,
 			);
@@ -286,6 +292,22 @@
 				2D6FC6212A1659EF00436F02 /* Info.plist */,
 			);
 			path = GualdoTube;
+			sourceTree = "<group>";
+		};
+		2DDD2D492A1E5ABC008A8A5C /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				2DDD2D4A2A1E5AF0008A8A5C /* BottomSheetViewController.swift */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		2DDD2D4C2A1EC483008A8A5C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2DDD2D4D2A1EC49E008A8A5C /* UIview+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,12 +405,14 @@
 				2D6FC6182A1659EE00436F02 /* ViewController.swift in Sources */,
 				2D423C0A2A1AB7F900B848F8 /* HomeProviderMock.swift in Sources */,
 				2D423C0D2A1AB84500B848F8 /* Utils.swift in Sources */,
+				2DDD2D4E2A1EC49E008A8A5C /* UIview+Extension.swift in Sources */,
 				2D3F3EFE2A183CDD009CB0AF /* PlaylistsViewController.swift in Sources */,
 				2D3F3F0E2A184532009CB0AF /* RequestModel.swift in Sources */,
 				2D423C252A1AC4A600B848F8 /* PlaylistCell.swift in Sources */,
 				2D3F3EE32A17C54A009CB0AF /* PlaylistsModel.swift in Sources */,
 				2D423C192A1AC36100B848F8 /* MockManager.swift in Sources */,
 				2D6FC6142A1659EE00436F02 /* AppDelegate.swift in Sources */,
+				2DDD2D4B2A1E5AF0008A8A5C /* BottomSheetViewController.swift in Sources */,
 				2D67EAA52A1B4CB10036A463 /* ChannelCell.swift in Sources */,
 				2D3F3EF22A183C75009CB0AF /* HomeViewController.swift in Sources */,
 				2D3F3EE52A17D6B7009CB0AF /* VideoModel.swift in Sources */,

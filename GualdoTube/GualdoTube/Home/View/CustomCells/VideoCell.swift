@@ -10,6 +10,8 @@ import Kingfisher
 
 class VideoCell: UITableViewCell {
     
+    var didTapThreeDots: (() -> Void)?
+    
     lazy var videoThumbnailImage: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -125,5 +127,15 @@ class VideoCell: UITableViewCell {
         }
         
         horizontalStack.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: isLastVideo ? 0 : -14).isActive = true
+        
+        self.bringSubviewToFront(threeDotsImage)
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(threeDotsTapped))
+        threeDotsImage.isUserInteractionEnabled = true
+        threeDotsImage.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc func threeDotsTapped() {
+        didTapThreeDots?()
     }
 }

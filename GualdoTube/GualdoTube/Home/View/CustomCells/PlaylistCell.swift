@@ -10,6 +10,8 @@ import Kingfisher
 
 class PlaylistCell: UITableViewCell {
     
+    var didTapThreeDots: (() -> Void)?
+    
     lazy var videoImage: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -150,11 +152,21 @@ class PlaylistCell: UITableViewCell {
     
     func configCell(model: PlaylistsModel.Item, isLastItem: Bool) {
         
-        infoVerticalStack.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: isLastItem ? 0 : -35).isActive = true
-        
         videoImage.kf.setImage(with: URL(string: model.snippet.thumbnails.medium.url))
         videoTitleLabel.text = model.snippet.title
         videoCountLabel.text = "\(model.contentDetails.itemCount) videos"
         overlayVideoCountLabel.text = String(model.contentDetails.itemCount)
+        
+        infoVerticalStack.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: isLastItem ? 0 : -35).isActive = true
+        
+        self.sendSubviewToBack(self.contentView)
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(threeDotsTapped))
+        threeDotsImage.isUserInteractionEnabled = true
+        threeDotsImage.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc func threeDotsTapped() {
+        didTapThreeDots?()
     }
 }

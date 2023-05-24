@@ -51,6 +51,12 @@ class HomeViewController: UIViewController {
         tableViewHome.delegate = self
         tableViewHome.dataSource = self
     }
+    
+    private func presentBottomSheet() {
+        let vC = BottomSheetViewController()
+        vC.modalPresentationStyle = .overCurrentContext
+        self.present(vC, animated: false)
+    }
 }
 
 extension HomeViewController: UITableViewDelegate {
@@ -88,6 +94,9 @@ extension HomeViewController: UITableViewDataSource {
             }
             
             playlistItemCell.configCell(model: playlistItem[indexPath.row], isLastVideo: (playlistItem.count - 1) == indexPath.row)
+            playlistItemCell.didTapThreeDots = { [weak self] in
+                self?.presentBottomSheet()
+            }
             
             return playlistItemCell
             
@@ -98,6 +107,9 @@ extension HomeViewController: UITableViewDataSource {
             }
             
             videoCell.configCell(model: videos[indexPath.row], isLastVideo: (videos.count - 1) == indexPath.row)
+            videoCell.didTapThreeDots = { [weak self] in
+                self?.presentBottomSheet()
+            }
             
             return videoCell
             
@@ -108,6 +120,9 @@ extension HomeViewController: UITableViewDataSource {
             }
             
             playlistCell.configCell(model: playlist[indexPath.row], isLastItem: (playlist.count - 1) == indexPath.row)
+            playlistCell.didTapThreeDots = { [weak self] in
+                self?.presentBottomSheet()
+            }
             
             return playlistCell
         }
