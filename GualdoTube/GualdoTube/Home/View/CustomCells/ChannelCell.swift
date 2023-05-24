@@ -180,7 +180,9 @@ class ChannelCell: UITableViewCell {
     }
     
     private func configView() {
+        
         self.backgroundColor = UIColor(named: "backgroundColor")
+        self.selectionStyle = .none
         
         self.addSubview(bannerImage)
         self.addSubview(profileStackView)

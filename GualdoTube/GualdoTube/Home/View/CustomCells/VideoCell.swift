@@ -96,6 +96,8 @@ class VideoCell: UITableViewCell {
     private func configView() {
         
         self.backgroundColor = UIColor(named: "backgroundColor")
+        self.selectionStyle = .none
+        
         self.addSubview(horizontalStack)
         self.addSubview(threeDotsImage)
         
@@ -103,13 +105,12 @@ class VideoCell: UITableViewCell {
             horizontalStack.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 14),
             horizontalStack.topAnchor.constraint(equalTo: self.topAnchor),
             horizontalStack.trailingAnchor.constraint(equalTo: threeDotsImage.leadingAnchor, constant: -3),
-            horizontalStack.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -14),
             threeDotsImage.topAnchor.constraint(equalTo: self.topAnchor, constant: 8),
             threeDotsImage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -14)
         ])
     }
     
-    func configCell(model: Any) {
+    func configCell(model: Any, isLastVideo: Bool) {
         
         if let video = model as? VideoModel.Item {
             videoThumbnailImage.kf.setImage(with: URL(string: video.snippet?.thumbnails.medium?.url ?? ""))
@@ -122,5 +123,7 @@ class VideoCell: UITableViewCell {
             channelNameLabel.text = playlistItem.snippet.channelTitle
             viewsLabel.text = "332 views - 3 months ago"
         }
+        
+        horizontalStack.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: isLastVideo ? 0 : -14).isActive = true
     }
 }

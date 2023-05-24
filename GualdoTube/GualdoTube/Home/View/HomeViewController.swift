@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = UIColor(named: "backgroundColor")
-        tableView.separatorStyle = .none
+        tableView.separatorColor = .clear
         return tableView
     }()
     
@@ -45,9 +45,8 @@ class HomeViewController: UIViewController {
         
         tableViewHome.register(ChannelCell.self, forCellReuseIdentifier: "\(ChannelCell.self)")
         tableViewHome.register(VideoCell.self, forCellReuseIdentifier: "\(VideoCell.self)")
-        
-        let nibPlaylist = UINib(nibName: "\(PlaylistCell.self)", bundle: nil)
-        tableViewHome.register(nibPlaylist, forCellReuseIdentifier: "\(PlaylistCell.self)")
+        tableViewHome.register(PlaylistCell.self, forCellReuseIdentifier: "\(PlaylistCell.self)")
+        tableViewHome.register(SectionTitleView.self, forHeaderFooterViewReuseIdentifier: "\(SectionTitleView.self)")
         
         tableViewHome.delegate = self
         tableViewHome.dataSource = self
@@ -88,7 +87,7 @@ extension HomeViewController: UITableViewDataSource {
                 return UITableViewCell()
             }
             
-            playlistItemCell.configCell(model: playlistItem[indexPath.row])
+            playlistItemCell.configCell(model: playlistItem[indexPath.row], isLastVideo: (playlistItem.count - 1) == indexPath.row)
             
             return playlistItemCell
             
@@ -98,7 +97,7 @@ extension HomeViewController: UITableViewDataSource {
                 return UITableViewCell()
             }
             
-            videoCell.configCell(model: videos[indexPath.row])
+            videoCell.configCell(model: videos[indexPath.row], isLastVideo: (videos.count - 1) == indexPath.row)
             
             return videoCell
             
@@ -108,29 +107,27 @@ extension HomeViewController: UITableViewDataSource {
                 return UITableViewCell()
             }
             
+            playlistCell.configCell(model: playlist[indexPath.row], isLastItem: (playlist.count - 1) == indexPath.row)
+            
             return playlistCell
         }
         
         return UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sectionTitleList[section]
-    }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 1 || indexPath.section == 2 {
-            return 95.0
+            let isLastVideo = (objectList[indexPath.section].count - 1) == indexPath.row
+            return isLastVideo ? 81 : 95.0
         }
         return UITableView.automaticDimension
     }
     
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return .leastNormalMagnitude
-    }
-    
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return nil
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let sectionView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "\(SectionTitleView.self)") as? SectionTitleView
+        sectionView?.titleLabel.text = sectionTitleList[section]
+        sectionView?.configView()
+        return sectionView
     }
 }
 
