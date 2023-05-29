@@ -29,7 +29,7 @@ class PlaylistCell: UITableViewCell {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 13)
-        label.textColor = UIColor(named: "whiteColor")
+        label.textColor = .whiteColor
         return label
     }()
     
@@ -37,7 +37,7 @@ class PlaylistCell: UITableViewCell {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 11)
-        label.textColor = UIColor(named: "grayColor")
+        label.textColor = .grayColor
         return label
     }()
     
@@ -55,15 +55,15 @@ class PlaylistCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 13)
         label.textAlignment = .center
-        label.textColor = UIColor(named: "whiteColor")
+        label.textColor = .whiteColor
         label.setContentCompressionResistancePriority(.required, for: .vertical)
         return label
     }()
     
     lazy var overlayIconImage: UIImageView = {
-        let imageView = UIImageView(image: UIImage(systemName: "text.alignleft"))
+        let imageView = UIImageView(image: .textAlignLeft)
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.tintColor = UIColor(named: "whiteColor")
+        imageView.tintColor = .whiteColor
         
         NSLayoutConstraint.activate([
             imageView.heightAnchor.constraint(equalToConstant: 20),
@@ -102,9 +102,9 @@ class PlaylistCell: UITableViewCell {
     }()
     
     lazy var threeDotsImage: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "dots"))
+        let imageView = UIImageView(image: .dotImage)
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.tintColor = UIColor(named: "whiteColor")
+        imageView.tintColor = .whiteColor
         
         NSLayoutConstraint.activate([
             imageView.heightAnchor.constraint(equalToConstant: 13),
@@ -126,7 +126,7 @@ class PlaylistCell: UITableViewCell {
     
     private func configView() {
         
-        self.backgroundColor = UIColor(named: "backgroundColor")
+        self.backgroundColor = .backgroungColor
         self.selectionStyle = .none
         
         self.addSubview(videoImage)

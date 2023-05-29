@@ -14,7 +14,7 @@ class VideosViewController: UIViewController {
     lazy var videosTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.backgroundColor = UIColor(named: "backgroundColor")
+        tableView.backgroundColor = .backgroungColor
         tableView.separatorColor = .clear
         return tableView
     }()
@@ -31,7 +31,7 @@ class VideosViewController: UIViewController {
     
     func configTableView() {
         
-        view.backgroundColor = UIColor(named: "backgroundColor")
+        view.backgroundColor = .backgroungColor
         
         view.addSubview(videosTableView)
         
@@ -42,7 +42,7 @@ class VideosViewController: UIViewController {
             videosTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
         
-        videosTableView.register(VideoCell.self, forCellReuseIdentifier: "\(VideoCell.self)")
+        videosTableView.registerFromClass(cellClass: VideoCell.self)
         
         videosTableView.delegate = self
         videosTableView.dataSource = self
@@ -71,11 +71,14 @@ extension VideosViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let video = videosList[indexPath.row]
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(VideoCell.self)", for: indexPath) as? VideoCell else { return UITableViewCell() }
+        
         cell.configCell(model: video, isLastVideo: (videosList.count - 1) == indexPath.row)
         cell.didTapThreeDots = { [weak self] in
             self?.presentBottomSheet()
         }
+        
         return cell
     }
 }

@@ -33,7 +33,7 @@ class VideoCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 3
         label.font = UIFont.systemFont(ofSize: 13)
-        label.textColor = UIColor(named: "whiteColor")
+        label.textColor = .whiteColor
         label.setContentCompressionResistancePriority(.required, for: .vertical)
         return label
     }()
@@ -42,7 +42,7 @@ class VideoCell: UITableViewCell {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 12)
-        label.textColor = UIColor(named: "grayColor")
+        label.textColor = .grayColor
         label.setContentCompressionResistancePriority(.required, for: .vertical)
         return label
     }()
@@ -51,7 +51,7 @@ class VideoCell: UITableViewCell {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 12)
-        label.textColor = UIColor(named: "grayColor")
+        label.textColor = .grayColor
         label.setContentCompressionResistancePriority(.required, for: .vertical)
         return label
     }()
@@ -76,9 +76,9 @@ class VideoCell: UITableViewCell {
     }()
     
     lazy var threeDotsImage: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "dots"))
+        let imageView = UIImageView(image: .dotImage)
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.tintColor = UIColor(named: "whiteColor")
+        imageView.tintColor = .whiteColor
         
         NSLayoutConstraint.activate([
             imageView.heightAnchor.constraint(equalToConstant: 13),
@@ -100,7 +100,7 @@ class VideoCell: UITableViewCell {
     
     private func configView() {
         
-        self.backgroundColor = UIColor(named: "backgroundColor")
+        self.backgroundColor = .backgroungColor
         self.selectionStyle = .none
         
         self.addSubview(horizontalStack)

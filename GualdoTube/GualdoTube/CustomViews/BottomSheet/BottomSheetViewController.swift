@@ -27,7 +27,7 @@ class BottomSheetViewController: UIViewController {
     lazy var contentView: UIView = {
         let view = UIView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(named: "backgroundColor")
+        view.backgroundColor = .backgroungColor
         
         view.addSubview(verticalStack)
         
@@ -45,7 +45,7 @@ class BottomSheetViewController: UIViewController {
     lazy var separator: UIView = {
         let view = UIView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(named: "whiteColor")
+        view.backgroundColor = .whiteColor
         
         view.heightAnchor.constraint(equalToConstant: 10).isActive = true
         
@@ -101,7 +101,7 @@ class BottomSheetViewController: UIViewController {
             let iconImage: UIImageView = {
                 let imageView = UIImageView(image: UIImage(systemName: option.0))
                 imageView.translatesAutoresizingMaskIntoConstraints = false
-                imageView.tintColor = UIColor(named: "whiteColor")
+                imageView.tintColor = .whiteColor
                 imageView.contentMode = .scaleAspectFit
                 
                 NSLayoutConstraint.activate([
@@ -116,7 +116,7 @@ class BottomSheetViewController: UIViewController {
                 let label = UILabel(frame: .zero)
                 label.translatesAutoresizingMaskIntoConstraints = false
                 label.text = option.1
-                label.textColor = UIColor(named: "whiteColor")
+                label.textColor = .whiteColor
                 label.font = UIFont.systemFont(ofSize: 17)
                 return label
             }()

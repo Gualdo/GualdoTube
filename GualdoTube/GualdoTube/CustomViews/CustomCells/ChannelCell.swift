@@ -30,7 +30,7 @@ class ChannelCell: UITableViewCell {
     lazy var profileImageContainer: UIView = {
         let view = UIView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(named: "backgroundColor")
+        view.backgroundColor = .backgroungColor
         view.addSubview(profileImage)
         
         NSLayoutConstraint.activate([
@@ -47,7 +47,7 @@ class ChannelCell: UITableViewCell {
     lazy var channelTitle: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = UIColor(named: "whiteColor")
+        label.textColor = .whiteColor
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 21, weight: .regular)
         label.setContentCompressionResistancePriority(.required, for: .vertical)
@@ -57,7 +57,7 @@ class ChannelCell: UITableViewCell {
     lazy var subscribeLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = UIColor(named: "grayColor")
+        label.textColor = .grayColor
         label.font = UIFont.systemFont(ofSize: 15, weight: .regular)
         label.text = "SUBSCRIBED"
         label.setContentCompressionResistancePriority(.required, for: .vertical)
@@ -65,17 +65,17 @@ class ChannelCell: UITableViewCell {
     }()
     
     lazy var bellImage: UIImageView = {
-        let imageView = UIImageView(image: UIImage(named: "bell"))
+        let imageView = UIImageView(image: .bellImage)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = UIColor(named: "grayColor")
+        imageView.tintColor = .grayColor
         return imageView
     }()
     
     lazy var subscribeBellContainer: UIView = {
         let view = UIView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(named: "backgroundColor")
+        view.backgroundColor = .backgroungColor
         view.addSubview(subscribeLabel)
         view.addSubview(bellImage)
         
@@ -96,7 +96,7 @@ class ChannelCell: UITableViewCell {
     lazy var subscriptionContainer: UIView = {
         let view = UIView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(named: "backgroundColor")
+        view.backgroundColor = .backgroungColor
         view.addSubview(subscribeBellContainer)
         
         NSLayoutConstraint.activate([
@@ -111,7 +111,7 @@ class ChannelCell: UITableViewCell {
     lazy var subscriberNumbersLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = UIColor(named: "whiteColor")
+        label.textColor = .whiteColor
         label.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         label.textAlignment = .center
         label.setContentCompressionResistancePriority(.required, for: .vertical)
@@ -121,7 +121,7 @@ class ChannelCell: UITableViewCell {
     lazy var channelInfoLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = UIColor(named: "grayColor")
+        label.textColor = .grayColor
         label.font = UIFont.systemFont(ofSize: 11, weight: .regular)
         label.numberOfLines = 2
         label.setContentCompressionResistancePriority(.required, for: .vertical)
@@ -129,9 +129,9 @@ class ChannelCell: UITableViewCell {
     }()
     
     lazy var chevronRightImage: UIImageView = {
-        let imageView = UIImageView(image: UIImage(systemName: "chevron.right"))
+        let imageView = UIImageView(image: .chevronRight)
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.tintColor = UIColor(named: "grayColor")
+        imageView.tintColor = .grayColor
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
@@ -139,7 +139,7 @@ class ChannelCell: UITableViewCell {
     lazy var infoChevronContainer: UIView = {
         let view = UIView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(named: "backgroundColor")
+        view.backgroundColor = .backgroungColor
         view.addSubview(channelInfoLabel)
         view.addSubview(chevronRightImage)
         
@@ -165,7 +165,7 @@ class ChannelCell: UITableViewCell {
                                                        infoChevronContainer])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
-        stackView.backgroundColor = UIColor(named: "backgroundColor")
+        stackView.backgroundColor = .backgroungColor
         return stackView
     }()
 
@@ -181,7 +181,7 @@ class ChannelCell: UITableViewCell {
     
     private func configView() {
         
-        self.backgroundColor = UIColor(named: "backgroundColor")
+        self.backgroundColor = .backgroungColor
         self.selectionStyle = .none
         
         self.addSubview(bannerImage)

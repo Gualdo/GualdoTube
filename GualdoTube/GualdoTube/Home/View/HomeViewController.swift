@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
     lazy var homeTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.backgroundColor = UIColor(named: "backgroundColor")
+        tableView.backgroundColor = .backgroungColor
         tableView.separatorColor = .clear
         return tableView
     }()
@@ -34,7 +34,7 @@ class HomeViewController: UIViewController {
     
     func configView() {
         
-        view.backgroundColor = UIColor(named: "backgroundColor")
+        view.backgroundColor = .backgroungColor
         
         view.addSubview(homeTableView)
         
@@ -45,10 +45,10 @@ class HomeViewController: UIViewController {
             homeTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
         
-        homeTableView.register(ChannelCell.self, forCellReuseIdentifier: "\(ChannelCell.self)")
-        homeTableView.register(VideoCell.self, forCellReuseIdentifier: "\(VideoCell.self)")
-        homeTableView.register(PlaylistCell.self, forCellReuseIdentifier: "\(PlaylistCell.self)")
-        homeTableView.register(SectionTitleView.self, forHeaderFooterViewReuseIdentifier: "\(SectionTitleView.self)")
+        homeTableView.registerFromClass(cellClass: ChannelCell.self)
+        homeTableView.registerFromClass(cellClass: VideoCell.self)
+        homeTableView.registerFromClass(cellClass: PlaylistCell.self)
+        homeTableView.registerFromClass(headerFooterView: SectionTitleView.self)
         
         homeTableView.delegate = self
         homeTableView.dataSource = self
@@ -95,9 +95,7 @@ extension HomeViewController: UITableViewDataSource {
         
         if let channel = item as? [ChannelModel.Item] {
             
-            guard let channelCell = tableView.dequeueReusableCell(withIdentifier: "\(ChannelCell.self)", for: indexPath) as? ChannelCell else {
-                return UITableViewCell()
-            }
+            guard let channelCell = tableView.dequeueReusableCell(for: ChannelCell.self, in: indexPath) else { return UITableViewCell() }
 
             channelCell.configCell(model: channel[indexPath.row])
 
@@ -105,9 +103,7 @@ extension HomeViewController: UITableViewDataSource {
             
         } else if let playlistItem = item as? [PlaylistItemsModel.Item] {
             
-            guard let playlistItemCell = tableView.dequeueReusableCell(withIdentifier: "\(VideoCell.self)", for: indexPath) as? VideoCell else {
-                return UITableViewCell()
-            }
+            guard let playlistItemCell = tableView.dequeueReusableCell(for: VideoCell.self, in: indexPath) else { return UITableViewCell() }
             
             playlistItemCell.configCell(model: playlistItem[indexPath.row], isLastVideo: (playlistItem.count - 1) == indexPath.row)
             playlistItemCell.didTapThreeDots = { [weak self] in
@@ -118,9 +114,7 @@ extension HomeViewController: UITableViewDataSource {
             
         } else if let videos = item as? [VideoModel.Item] {
             
-            guard let videoCell = tableView.dequeueReusableCell(withIdentifier: "\(VideoCell.self)", for: indexPath) as? VideoCell else {
-                return UITableViewCell()
-            }
+            guard let videoCell = tableView.dequeueReusableCell(for: VideoCell.self, in: indexPath) else { return UITableViewCell() }
             
             videoCell.configCell(model: videos[indexPath.row], isLastVideo: (videos.count - 1) == indexPath.row)
             videoCell.didTapThreeDots = { [weak self] in
@@ -131,9 +125,7 @@ extension HomeViewController: UITableViewDataSource {
             
         } else if let playlist = item as? [PlaylistsModel.Item] {
             
-            guard let playlistCell = tableView.dequeueReusableCell(withIdentifier: "\(PlaylistCell.self)", for: indexPath) as? PlaylistCell else {
-                return UITableViewCell()
-            }
+            guard let playlistCell = tableView.dequeueReusableCell(for: PlaylistCell.self, in: indexPath) else { return UITableViewCell() }
             
             playlistCell.configCell(model: playlist[indexPath.row], isLastItem: (playlist.count - 1) == indexPath.row)
             playlistCell.didTapThreeDots = { [weak self] in
