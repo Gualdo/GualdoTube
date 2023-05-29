@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    lazy var tableViewHome: UITableView = {
+    lazy var homeTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = UIColor(named: "backgroundColor")
@@ -25,31 +25,33 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configTableView()
+        configView()
         
         Task {
             await presenter.getHomeObjects()
         }
     }
     
-    func configTableView() {
+    func configView() {
         
-        view.addSubview(tableViewHome)
+        view.backgroundColor = UIColor(named: "backgroundColor")
+        
+        view.addSubview(homeTableView)
         
         NSLayoutConstraint.activate([
-            tableViewHome.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-            tableViewHome.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            tableViewHome.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            tableViewHome.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            homeTableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            homeTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            homeTableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            homeTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
         
-        tableViewHome.register(ChannelCell.self, forCellReuseIdentifier: "\(ChannelCell.self)")
-        tableViewHome.register(VideoCell.self, forCellReuseIdentifier: "\(VideoCell.self)")
-        tableViewHome.register(PlaylistCell.self, forCellReuseIdentifier: "\(PlaylistCell.self)")
-        tableViewHome.register(SectionTitleView.self, forHeaderFooterViewReuseIdentifier: "\(SectionTitleView.self)")
+        homeTableView.register(ChannelCell.self, forCellReuseIdentifier: "\(ChannelCell.self)")
+        homeTableView.register(VideoCell.self, forCellReuseIdentifier: "\(VideoCell.self)")
+        homeTableView.register(PlaylistCell.self, forCellReuseIdentifier: "\(PlaylistCell.self)")
+        homeTableView.register(SectionTitleView.self, forHeaderFooterViewReuseIdentifier: "\(SectionTitleView.self)")
         
-        tableViewHome.delegate = self
-        tableViewHome.dataSource = self
+        homeTableView.delegate = self
+        homeTableView.dataSource = self
     }
     
     private func presentBottomSheet() {
@@ -61,6 +63,20 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 1 || indexPath.section == 2 {
+            let isLastVideo = (objectList[indexPath.section].count - 1) == indexPath.row
+            return isLastVideo ? 81 : 95.0
+        }
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let sectionView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "\(SectionTitleView.self)") as? SectionTitleView
+        sectionView?.titleLabel.text = sectionTitleList[section]
+        sectionView?.configView()
+        return sectionView
+    }
 }
 
 extension HomeViewController: UITableViewDataSource {
@@ -129,21 +145,6 @@ extension HomeViewController: UITableViewDataSource {
         
         return UITableViewCell()
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 1 || indexPath.section == 2 {
-            let isLastVideo = (objectList[indexPath.section].count - 1) == indexPath.row
-            return isLastVideo ? 81 : 95.0
-        }
-        return UITableView.automaticDimension
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let sectionView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "\(SectionTitleView.self)") as? SectionTitleView
-        sectionView?.titleLabel.text = sectionTitleList[section]
-        sectionView?.configView()
-        return sectionView
-    }
 }
 
 extension HomeViewController: HomeViewProtocol {
@@ -151,6 +152,6 @@ extension HomeViewController: HomeViewProtocol {
     func getData(list: [[Any]], sectionTitleList: [String]) {
         objectList = list
         self.sectionTitleList = sectionTitleList
-        tableViewHome.reloadData()
+        homeTableView.reloadData()
     }
 }

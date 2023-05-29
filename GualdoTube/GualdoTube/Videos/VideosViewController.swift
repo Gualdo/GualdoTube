@@ -8,22 +8,82 @@
 import UIKit
 
 class VideosViewController: UIViewController {
+    
+    lazy var presenter = VideosPresenter(delegate: self)
+    
+    lazy var videosTableView: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .grouped)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.backgroundColor = UIColor(named: "backgroundColor")
+        tableView.separatorColor = .clear
+        return tableView
+    }()
+    
+    var videosList: [VideoModel.Item] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configTableView()
+        Task {
+            await presenter.getVideos()
+        }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func configTableView() {
+        
+        view.backgroundColor = UIColor(named: "backgroundColor")
+        
+        view.addSubview(videosTableView)
+        
+        NSLayoutConstraint.activate([
+            videosTableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            videosTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            videosTableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            videosTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
+        
+        videosTableView.register(VideoCell.self, forCellReuseIdentifier: "\(VideoCell.self)")
+        
+        videosTableView.delegate = self
+        videosTableView.dataSource = self
     }
-    */
+    
+    private func presentBottomSheet() {
+        let vC = BottomSheetViewController()
+        vC.modalPresentationStyle = .overCurrentContext
+        self.present(vC, animated: false)
+    }
+}
 
+extension VideosViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let isLastVideo = (videosList.count - 1) == indexPath.row
+        return isLastVideo ? 81 : 95.0
+    }
+}
+
+extension VideosViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.videosList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let video = videosList[indexPath.row]
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(VideoCell.self)", for: indexPath) as? VideoCell else { return UITableViewCell() }
+        cell.configCell(model: video, isLastVideo: (videosList.count - 1) == indexPath.row)
+        cell.didTapThreeDots = { [weak self] in
+            self?.presentBottomSheet()
+        }
+        return cell
+    }
+}
+
+extension VideosViewController: VideosViewProtocol {
+    
+    func getVideos(videosList: [VideoModel.Item]) {
+        self.videosList = videosList
+        videosTableView.reloadData()
+    }
 }

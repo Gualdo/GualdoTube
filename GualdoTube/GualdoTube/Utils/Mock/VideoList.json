@@ -1,0 +1,1712 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "dZN_0ppQa7MwjPLSXoLyaGC9fjg",
+    "nextPageToken": "CDIQAA",
+    "regionCode": "ES",
+    "pageInfo": {
+        "totalResults": 96,
+        "resultsPerPage": 50
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "VY8Y7IPU5IC0i7TVq9fQOFNluFo",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "v7NEplM3ZrY"
+            },
+            "snippet": {
+                "publishedAt": "2021-10-05T05:00:16Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Patrón de diseño Delegation en Swift 2/3 *Tutorial*",
+                "description": "En esta segunda parte te explico qué es el patrón de diseño Delegation y cómo puedes utilizarlo en tu App. Te muestro varios ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/v7NEplM3ZrY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/v7NEplM3ZrY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/v7NEplM3ZrY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-10-05T05:00:16Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "Xm6yPW0ZHu4LFmJD4E6zIBwYyIM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "BhM_dovPUmM"
+            },
+            "snippet": {
+                "publishedAt": "2021-10-26T05:00:04Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Manejo de Memoria ARC - Value Type y Reference Type 🔥 - iOS - Swift 1/3",
+                "description": "Este es el primer video vide de una serie completa dónde explico en detalle todo lo relacionado al manejo de memoria ARC en el ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/BhM_dovPUmM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-10-26T05:00:04Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "cnSssDLgob6FESlWPzSDVgKoDPg",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "SWEAnN6XJsw"
+            },
+            "snippet": {
+                "publishedAt": "2022-07-26T14:00:16Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "12 - Como crear un TabView - Xcode 14 - iOS 16 - Curso de SwiftUI para Principiantes",
+                "description": "En este video te explico como crear un TabView en SwiftUI. En esta serie de videos vamos a dar un recorrido muchos ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/SWEAnN6XJsw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/SWEAnN6XJsw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/SWEAnN6XJsw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-07-26T14:00:16Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "NwmYMMRxPUyBpdZr_2Ni2VQw8CM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "v1mWkw7Lito"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-05T05:00:19Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "1- Curso de Swift iOS 15 desde CERO - Xcode 13 - 2022",
+                "description": "CLONANDO YOUTUBE *Curso de Swift* iOS 15 desde CERO Español 2022. Inroducción y Demo. Este es el primer video de una ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/v1mWkw7Lito/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-05T05:00:19Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "an9JsXsI5ORajFOBgay8giY5gl4",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "zalh4iGoplU"
+            },
+            "snippet": {
+                "publishedAt": "2021-10-05T05:00:17Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Que son y como funcionan los Protocols en Swift 1/3 *Tutorial*",
+                "description": "En esta primera parte te explico desde cero cómo puedes comenzar a utilizar protocols en swift. Sintaxis, Métodos Opcionales ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/zalh4iGoplU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/zalh4iGoplU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/zalh4iGoplU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-10-05T05:00:17Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "2bvVabK6Hv5TfoLKBT2oj4ikvS0",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "lWZLs5BYLiM"
+            },
+            "snippet": {
+                "publishedAt": "2021-10-28T05:00:14Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Manejo de Memoria ARC y Retain Cycle, Strong, Weak, Unowned 🔥- iOS - Swift 2/3",
+                "description": "En esta video te explico como funciona el Automatic Reference Counting y cómo se debe gestionar los reference types para ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/lWZLs5BYLiM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/lWZLs5BYLiM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/lWZLs5BYLiM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-10-28T05:00:14Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "qD_dvuqJxPIpfh4CAuI1yX1sDa4",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "Ko7v83LeQyU"
+            },
+            "snippet": {
+                "publishedAt": "2023-01-17T13:00:09Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Closures en Swift: Fundamentos y ejemplos prácticos.",
+                "description": "En este video te explico todo lo que necesitas saber sobre los closures en Swift. Descubrirás qué son los closures, cómo ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Ko7v83LeQyU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Ko7v83LeQyU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Ko7v83LeQyU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-01-17T13:00:09Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "lCr7gPTPycU5GWB9CIrTMIsEXGE",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "hBmmw9mFJ1A"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-17T17:00:25Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "17 - Layout TableViewCell creación de la Celda Channel del Home - Curso Swift Español 2022",
+                "description": "En este video vamos a crear la celda encargada de mostrar la información principal del Channel. Layout TableViewCell paso a ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/hBmmw9mFJ1A/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/hBmmw9mFJ1A/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/hBmmw9mFJ1A/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-17T17:00:25Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "q0Babulpr2r-R3vhcfV0RX35bnA",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "B_FZvzj6VvA"
+            },
+            "snippet": {
+                "publishedAt": "2022-05-23T17:00:16Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "1 - Introducción a Unit Testing - Curso Unit Testing Swift Español 2022",
+                "description": "Introducción a Unit Testing o pruebas unitarias, estas nos sirven para garantizar la estabilidad del código que va a producción, ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/B_FZvzj6VvA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/B_FZvzj6VvA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/B_FZvzj6VvA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-05-23T17:00:16Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "xRQ7dF6Y2j71I6cT4H3KDqcPYDM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "9FQPCC5qc-Q"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-25T17:00:05Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "25 - Cómo crear un CollectionView - Creación de Tabs - Curso Swift Español 2022",
+                "description": "En este video vamos a estar creando el Tab Bar para manipular el PageViewController y de esta forma poder cambiar entre ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/9FQPCC5qc-Q/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/9FQPCC5qc-Q/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/9FQPCC5qc-Q/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-25T17:00:05Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "d08-84vVPztwHlpNbxWuYtaKRe4",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "gwGRLpPMt2o"
+            },
+            "snippet": {
+                "publishedAt": "2022-06-14T14:00:18Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Arquitectura MVVM en Swift - Combine",
+                "description": "Aprende cómo funciona la Arquitectura MVVM en Swift, vamos a estar haciendo un ejemplo utilizando Combine Framework.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/gwGRLpPMt2o/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/gwGRLpPMt2o/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/gwGRLpPMt2o/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-14T14:00:18Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "4GyqjsTtZRuywLcsoXHtjxDW4oI",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "v_SI3vKnFrs"
+            },
+            "snippet": {
+                "publishedAt": "2022-06-09T13:00:25Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Introducción a la nueva librería Swift Chart en SwiftUI 4 - iOS 16 - Xcode 14 - WWDC22",
+                "description": "Apple introdujo una nueva librería para crear gráficas de una forma muy sencilla, esta librería se llama Swift Charts. En este video ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/v_SI3vKnFrs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/v_SI3vKnFrs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/v_SI3vKnFrs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-09T13:00:25Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "y1O_0lsCJIplFQ1MNqfbv3KpCnA",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "Fw18NMvpiZo"
+            },
+            "snippet": {
+                "publishedAt": "2023-02-01T13:00:08Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Entendiendo los closures @escaping en Swift",
+                "description": "Este video explica cómo funcionan los closures @escaping en Swift, un concepto importante para entender cómo se manejan las ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Fw18NMvpiZo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Fw18NMvpiZo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Fw18NMvpiZo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-02-01T13:00:08Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "AutGVM8-Wh2pAYOCNrpMXQwtF0c",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "eTv8UxKivZo"
+            },
+            "snippet": {
+                "publishedAt": "2022-06-28T14:00:19Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "7 - Navigation Stack y NavigationView SwiftUI 4 - iOS 16 - Curso de SwiftUI para Principiantes",
+                "description": "En este video te explico cómo funciona el NavigationView y el NavigationStack de iOS 16. Vamos a explorar sus principales ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/eTv8UxKivZo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/eTv8UxKivZo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/eTv8UxKivZo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-28T14:00:19Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "OPOz0TmhpVLnmme6MRCk1zD0L2Y",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "DL5r5uPHm18"
+            },
+            "snippet": {
+                "publishedAt": "2022-08-16T14:00:05Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "15 - Maquetando Instagram en SwiftUI 1/4 - Curso de SwiftUI para Principiantes",
+                "description": "En este video vamos a comenzar con la configuración necesaria para la maquetación de Instagram. Este video forma parte del ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/DL5r5uPHm18/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/DL5r5uPHm18/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/DL5r5uPHm18/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-08-16T14:00:05Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "jQomOjWkSw0NFygl5aQTLwMAtA8",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "t0jLFIxMR2E"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-08T05:01:50Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "6- Usando Quicktype.io para crear Models Swift - Curso Swift Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso Swift UIKit iOS 15* Español 2022. Vamos a crear los Model de forma automatizada y mucho ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/t0jLFIxMR2E/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/t0jLFIxMR2E/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/t0jLFIxMR2E/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-08T05:01:50Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "4-CzkuucrJwKslG9C9L4npi7n5Y",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "NrpGrtenhjs"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-08T05:00:06Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "5- Crear Model en Swift Paso a Paso - Curso Swift Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso de Swift* iOS 15 desde CERO Español 2022. En esta parte vamos a abordar en detalle, como ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/NrpGrtenhjs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/NrpGrtenhjs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/NrpGrtenhjs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-08T05:00:06Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "EvXq9jeKq3CdsZh7eR90BfO4id4",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "3ZXxXtoPmoo"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-07T05:00:00Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "4- Patrón de Arquitectura MVP - Curso Swift Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso Swift* UIKit iOS 15 Español 2022. En esta parte te voy a mostrar el Patrón de Arquitectura MVP.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/3ZXxXtoPmoo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/3ZXxXtoPmoo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/3ZXxXtoPmoo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-07T05:00:00Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "Sn0FHYtkgrneHjhNFzGmxt1wKYA",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "QS40bTp53R0"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-06T05:00:13Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "3- Qué es un API, YouTube API V3, POSTMAN *Curso Swift* iOS 15 Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso Swift UIKit iOS 15* Español 2022. En este video te explico qué es un API, como consumir los ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/QS40bTp53R0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/QS40bTp53R0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/QS40bTp53R0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-06T05:00:13Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "8wWN9suu6dcjXzcE5wrmHIrw2WM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "g-1Ux00zqnM"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-10T05:00:23Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "9- Creación Capa de Servicio / Service Layer Swift - Curso Swift Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso Swift UIKit iOS 15* Español 2022. En este video te muestro como crear la capa de servicio ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/g-1Ux00zqnM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/g-1Ux00zqnM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/g-1Ux00zqnM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-10T05:00:23Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "bFJJ0hUL4uANbrlT8Fr7aOzzP_8",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "aFpqjdHAHGg"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-11T05:00:01Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "10-Patrón Delegation y Dependency Injection en el HomePresenter - Curso Swift Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso de Swift* iOS 15 desde CERO Español 2022. En este video te vamos a hacer la conexión entre ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/aFpqjdHAHGg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/aFpqjdHAHGg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/aFpqjdHAHGg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-11T05:00:01Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "ujjl7JONVCnmeFyAMTvmE9yRQxo",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "5vvgIl6hahA"
+            },
+            "snippet": {
+                "publishedAt": "2022-06-21T14:00:03Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "2 - Componentes en SwiftUI - Xcode 14 - iOS 16 - Curso de SwiftUI para Principiantes",
+                "description": "Vamos a comenzar a explorar varios componentes del Framework, el cual te va a permitir tener la capacidad de maquetar y crear ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/5vvgIl6hahA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/5vvgIl6hahA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/5vvgIl6hahA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-21T14:00:03Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "gT16SmJWEEKM1NktH2Ipa7WnD5I",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "77dIzaydGO0"
+            },
+            "snippet": {
+                "publishedAt": "2022-06-07T16:06:03Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "10 Novedades de Xcode 14 - iOS 16 - WWDC22",
+                "description": "Te traigo algunas de las novedades de Xcode 14 - iOS 16 - Español. Vamos a pasar brevemente por 10 nuevas funcionalidades ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/77dIzaydGO0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/77dIzaydGO0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/77dIzaydGO0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-07T16:06:03Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "QCFaM8cVSqeIwAEFnEEirfQwdHA",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "jFKuMb6kILU"
+            },
+            "snippet": {
+                "publishedAt": "2022-06-02T14:00:23Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Patrón Observer - Programación Reactiva en Swift",
+                "description": "En este video te explico paso a paso como se utiliza el patrón observer y también vamos a estar desarrollando un ejercicio ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/jFKuMb6kILU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/jFKuMb6kILU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/jFKuMb6kILU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-02T14:00:23Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "jsRk6Bh3ziH0tpsOQJye-D5AkuU",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "B4kb10NLNdQ"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-13T05:00:05Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "12- Decodable y CodingKeys Fixeando Model - Curso Swift Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso Swift UIKit iOS 15* Español 2022. En este video vamos a estar haciendo algunos arreglos en el ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/B4kb10NLNdQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/B4kb10NLNdQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/B4kb10NLNdQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-13T05:00:05Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "YP2itfzMPNS0MXh_WAn9Z6gP5Pc",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "y9GMUlEM23c"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-21T17:00:37Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "21 - Cómo crear un Bottom Sheet en Swift Menú Inferior - Curso Swift Español 2022",
+                "description": "En este video te explico cómo crear un Bottom Sheet tipo menú para mostrar algunas opciones. Quería dejar claro que hay miles ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/y9GMUlEM23c/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/y9GMUlEM23c/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/y9GMUlEM23c/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-21T17:00:37Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "wpWrH74IsEnbiWax1y9D3FhQ5_Q",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "3Dz1swm55wo"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-09T05:00:01Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "7- Crear PageViewController en Swift 1/2 - Curso Swift Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso de Swift* iOS 15 desde CERO Español 2022. En este video te explico detalladamente como ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/3Dz1swm55wo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/3Dz1swm55wo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/3Dz1swm55wo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-09T05:00:01Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "KBgn5HgR6O81lxjoJ76oBV-0e3Y",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "Apqb_7ejVq4"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-15T17:00:08Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "15- Cómo crear un mock en Swift - Curso Swift Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso Swift* UIKit iOS 15 Español 2022 En este video te explico como mockear los servicios que se ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Apqb_7ejVq4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Apqb_7ejVq4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Apqb_7ejVq4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-15T17:00:08Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "Wkr8MXrBo1WXO0cieNTp5bfbdXs",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "b-GYQYUQzAQ"
+            },
+            "snippet": {
+                "publishedAt": "2022-06-20T17:00:22Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Introducción a SwiftUI con Xcode 14 - iOS 16 - Curso de SwiftUI para Principiantes",
+                "description": "En este video vamos a hacer una introducción SwiftUI y cómo Xcode muestra una interfaz diferente para mostrar los cambios del ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/b-GYQYUQzAQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/b-GYQYUQzAQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/b-GYQYUQzAQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-20T17:00:22Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "Vg5v2sYTn9katoTfs5gNUx5Eqk8",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "_ixUmFhmLEU"
+            },
+            "snippet": {
+                "publishedAt": "2022-06-22T14:00:13Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "3 - Property Wrapper @State + componentes - Xcode 14 - iOS 16 - Curso de SwiftUI para Principiantes",
+                "description": "En este video estaré explicando el property wrapper @State y también vamos a estar utilizándolos con diferentes componentes ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/_ixUmFhmLEU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/_ixUmFhmLEU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/_ixUmFhmLEU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-22T14:00:13Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "CYp-YvLT_54GUVpF91Par8Q4W0M",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "TSelUV1PeU4"
+            },
+            "snippet": {
+                "publishedAt": "2021-10-07T05:00:19Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "Patrón de diseño Dependency Injection en Swift 3/3 *Tutorial*",
+                "description": "En esta tercera parte te explico qué es el patrón Dependency Injection y como implementarlo para hacer mocks para tus Unit ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/TSelUV1PeU4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/TSelUV1PeU4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/TSelUV1PeU4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-10-07T05:00:19Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "vXdMbtT1F7hzCohi0_wL7kdML0s",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "MBC3utljlhs"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-22T17:00:21Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "22- Creación de TableView de Videos - Curso Swift Español 2022",
+                "description": "En este video vamos a crear el listado de videos en el segundo page del PageViewController. CLONANDO YOUTUBE - *Curso ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/MBC3utljlhs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/MBC3utljlhs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/MBC3utljlhs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-22T17:00:21Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "1ROWzh5K0L-bBBx-zvo_PPpxLlQ",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "mlq79ht4WQY"
+            },
+            "snippet": {
+                "publishedAt": "2022-06-06T14:00:30Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "3 - Coverage y Errores - Curso Unit Testing Swift Español 2022",
+                "description": "Ahora vamos a abordar cómo validar cuanta covertura tienen los test creados y también cómo probar los casos de errores.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/mlq79ht4WQY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/mlq79ht4WQY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/mlq79ht4WQY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-06T14:00:30Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "nrDdGNMsThzD2-bJnZia2crDoXg",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "169y9uDlmWk"
+            },
+            "snippet": {
+                "publishedAt": "2022-05-02T15:00:01Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "35 - Ultimo video del curso - Curso Swift Español 2022",
+                "description": "Este es el último video del curso, en el mismo vamos a estar terminando lo que falta de la aplicación. También te muestro los ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/169y9uDlmWk/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/169y9uDlmWk/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/169y9uDlmWk/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-05-02T15:00:01Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "4fuvH7WJQ8KPamSbEl2AJVKdnYM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "qprAFciReV4"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-14T17:00:35Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "14- Qué son los mocks y como utilizarlos en Swift - Curso Swift Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso Swift UIKit iOS 15* Español 2022. En este video te explico qué son los mocks y como utilizarlos.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/qprAFciReV4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/qprAFciReV4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/qprAFciReV4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-14T17:00:35Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "Y0bIac-HH-1on-73rgMs8y0zWE8",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "4Ybbg-bsk44"
+            },
+            "snippet": {
+                "publishedAt": "2022-05-30T14:00:02Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "2 - Mocks y Expectations - Curso Unit Testing Swift Español 2022",
+                "description": "En este video abordaremos principalmente los Expectations y la creación del Mock del delegate. En esta serie de videos te ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/4Ybbg-bsk44/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/4Ybbg-bsk44/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/4Ybbg-bsk44/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-05-30T14:00:02Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "OeYzMO5IM4e3TNqIaGLqOFFMLt0",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "gDdGD15dCL4"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-31T17:00:32Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "31- Manejo de Errores en Swift - Swift Error Handler - Curso Swift Español 2022",
+                "description": "En este te muestro cómo puedes mostrar un mensaje al usuario cuando algo sale mal en la aplicación. Para eso vamos a estar ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/gDdGD15dCL4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/gDdGD15dCL4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/gDdGD15dCL4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-31T17:00:32Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "p-qQL2FQWGHZYpiCGIIWgj7gXXA",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "Ho1iZWFY258"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-27T17:00:05Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "27 - Como Instalar Floating Panel - Curso Swift Español 2022",
+                "description": "En este video vamos a ver cómo instalar Floating Panel que es la librería que estaremos utilizando para mostrar el video.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Ho1iZWFY258/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Ho1iZWFY258/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Ho1iZWFY258/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-27T17:00:05Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "Rep4GcENstdhsGVv9y0NE80MRc8",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "JIDsIV8fdl0"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-26T17:00:16Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "26 - Animación del TabBar del PageViewController - Curso Swift Español 2022",
+                "description": "En este video te explico cómo crear la animación del TabBar del PageViewController superior. CLONANDO YOUTUBE - *Curso ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/JIDsIV8fdl0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/JIDsIV8fdl0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/JIDsIV8fdl0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-26T17:00:16Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "cyzPD6rrpL4whsvFmTjHjBxNSp4",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "k_-NrBfMEKY"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-20T17:00:21Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "20 - Creación del PlaylistCell - Curso Swift Español 2022",
+                "description": "En este video vamos a estar maquetando la celda del Playlist. CLONANDO YOUTUBE - *Curso Swift* UIKit iOS 15 Español 2022.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/k_-NrBfMEKY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/k_-NrBfMEKY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/k_-NrBfMEKY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-20T17:00:21Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "n37qEG9gggS60LerHccY8kdE9t8",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "VSDFRsnsH9s"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-19T17:00:14Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "19 - Creando Layout de la Celda Video - Curso Swift Español 2022",
+                "description": "CLONANDO YOUTUBE - *Curso Swift* UIKit iOS 15 Español 2022. En este video vamos a estar maquetando la celda que nos ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/VSDFRsnsH9s/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/VSDFRsnsH9s/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/VSDFRsnsH9s/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-19T17:00:14Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "eNsfa49DonFzFRjCWUhECGl5y9E",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "VY0HvOuHvSo"
+            },
+            "snippet": {
+                "publishedAt": "2022-04-03T18:00:08Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "34 - Creación del TipView del Video - Curso Swift Español 2022",
+                "description": "En este video continuaremos trabajando en el PlayVideo donde estaremos maquetando y agregándole las funcionalidades al ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/VY0HvOuHvSo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/VY0HvOuHvSo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/VY0HvOuHvSo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-04-03T18:00:08Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "bSQaGSMfp3p_zVFjbg-MUkm4wXE",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "KjPXChebyQs"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-23T17:00:19Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "23 - Challenge Swift - Refactorización - Curso Swift Español 2022",
+                "description": "En este video te propongo hacer las 3 pantallas que faltan de la sección principal del PageController. También estaremos ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/KjPXChebyQs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/KjPXChebyQs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/KjPXChebyQs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-23T17:00:19Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "9PCFwKVkCwqzYU7V1cF8seRA5_s",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "0qzXSYlXro4"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-29T17:02:33Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "29 - Creación del MVP de PlayVideo - Curso Swift Español 2022",
+                "description": "En este video vamos a estar creando el Presenter, Provider y Mock del PlayVideoViewController. En esta serie de videos te ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/0qzXSYlXro4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/0qzXSYlXro4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/0qzXSYlXro4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-29T17:02:33Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "YrD6M9P4mfzze2Ioxvs_A3XT3cE",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "ry7wYIYFJL0"
+            },
+            "snippet": {
+                "publishedAt": "2022-06-29T14:00:26Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "8 - Button, Alert,  ConfirmationDialog, Sheet, Link, Label - Curso de SwiftUI para Principiantes",
+                "description": "En este video vamos a seguir explorando los componentes de SwiftUI, vamos a estar abordando los componentes Button, Alert, ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ry7wYIYFJL0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ry7wYIYFJL0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ry7wYIYFJL0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-29T14:00:26Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "QXd82GUKYT7loGzHWqjS6bICxcs",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "VcNjoKDArAY"
+            },
+            "snippet": {
+                "publishedAt": "2022-06-30T14:00:15Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "9 - Published, ObservedObject, ObservableObject - Curso de SwiftUI 4 para Principiantes",
+                "description": "En este video vamos a comenzar a revisar los property wrappers mas usados en SwiftUI, vamos a ver cómo funcionan los ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/VcNjoKDArAY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/VcNjoKDArAY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/VcNjoKDArAY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-30T14:00:15Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "ptlNJpdVO_ryBJo-zfYaqy0Mtzg",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "JJ8CjRoKsNY"
+            },
+            "snippet": {
+                "publishedAt": "2022-07-04T14:00:17Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "11 - Property Wrapper @EnvironmentObject - Xcode 14 - iOS 16 - Curso de SwiftUI para Principiantes",
+                "description": "En este video te explico como funciona el Property Wrapper @EnvironmentObject y @Binding En esta serie de videos vamos a ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/JJ8CjRoKsNY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/JJ8CjRoKsNY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/JJ8CjRoKsNY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-07-04T14:00:17Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "uayVnYm6WSqeo5jjr2xTjDnn6Xs",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "iDE_RwbodOY"
+            },
+            "snippet": {
+                "publishedAt": "2022-06-24T14:00:32Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "5 - LazyVGrid y LazyHGrid SwiftUI 4  con Xcode 14 - iOS 16 - Curso de SwiftUI para Principiantes",
+                "description": "En este video te explico como puedes crear un LazyVGrid y LazyHGrid, ambos componentes se utilizan para crear una grilla ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/iDE_RwbodOY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/iDE_RwbodOY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/iDE_RwbodOY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-06-24T14:00:32Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "DtFMN1TiKLQShKVUcA0FExG9Ap4",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "2e3tjqxtKP4"
+            },
+            "snippet": {
+                "publishedAt": "2022-03-30T17:00:04Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "30 - Creando Celda de VideoHeaderCell - Curso Swift Español 2022",
+                "description": "En este video vamos a crear la celda que estaremos utilizando para mostrar la información principal del video que se está ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/2e3tjqxtKP4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/2e3tjqxtKP4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/2e3tjqxtKP4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-03-30T17:00:04Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "DWGTmNVgy5MbVCVIFnk7N92Ewwc",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "JqXgeetV010"
+            },
+            "snippet": {
+                "publishedAt": "2022-07-28T14:00:19Z",
+                "channelId": "UC_I_lCplbwIf60iUgsTE79g",
+                "title": "13 - Como crear un Toolbar en SwiftUI - Xcode 14 - iOS 16 - Curso de SwiftUI para Principiantes",
+                "description": "En este video te explico como puedes crear un Toolbar en la parte superior e inferior de una vista utilizando SwiftUI. En esta serie ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/JqXgeetV010/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/JqXgeetV010/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/JqXgeetV010/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Victor Roldan Dev",
+                "liveBroadcastContent": "none",
+                "publishTime": "2022-07-28T14:00:19Z"
+            }
+        }
+    ]
+}

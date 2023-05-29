@@ -12,6 +12,9 @@ class VideoCell: UITableViewCell {
     
     var didTapThreeDots: (() -> Void)?
     
+    lazy var bottomConstraint = horizontalStack.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -14)
+    lazy var lastVideoBottomConstraint = horizontalStack.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0)
+    
     lazy var videoThumbnailImage: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -126,7 +129,11 @@ class VideoCell: UITableViewCell {
             viewsLabel.text = "332 views - 3 months ago"
         }
         
-        horizontalStack.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: isLastVideo ? 0 : -14).isActive = true
+        if isLastVideo {
+            lastVideoBottomConstraint.isActive = true
+        } else {
+            bottomConstraint.isActive = true
+        }
         
         self.bringSubviewToFront(threeDotsImage)
         
@@ -137,5 +144,10 @@ class VideoCell: UITableViewCell {
     
     @objc func threeDotsTapped() {
         didTapThreeDots?()
+    }
+    
+    override func prepareForReuse() {
+        bottomConstraint.isActive = false
+        lastVideoBottomConstraint.isActive = false
     }
 }
