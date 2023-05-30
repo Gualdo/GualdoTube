@@ -9,11 +9,11 @@ import UIKit
 
 extension UIImage {
     
-    @nonobjc class var bellImage: UIImage? {
+    @nonobjc class var bellIcon: UIImage? {
         return UIImage(named: "bell")
     }
     
-    @nonobjc class var dotImage: UIImage? {
+    @nonobjc class var dotsIcon: UIImage? {
         return UIImage(named: "dots")
     }
     
@@ -21,15 +21,15 @@ extension UIImage {
         return UIImage(named: "magnifying")
     }
     
-    @nonobjc class var castImage: UIImage? {
+    @nonobjc class var castIcon: UIImage? {
         return UIImage(named: "cast")
     }
     
-    @nonobjc class var chevronRight: UIImage? {
+    @nonobjc class var chevronRightIcon: UIImage? {
         return UIImage(systemName: "chevron.right")
     }
     
-    @nonobjc class var textAlignLeft: UIImage? {
+    @nonobjc class var textAlignLeftIcon: UIImage? {
         return UIImage(systemName: "text.alignleft")
     }
 }

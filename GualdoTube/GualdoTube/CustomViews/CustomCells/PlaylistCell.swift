@@ -61,7 +61,7 @@ class PlaylistCell: UITableViewCell {
     }()
     
     lazy var overlayIconImage: UIImageView = {
-        let imageView = UIImageView(image: .textAlignLeft)
+        let imageView = UIImageView(image: .textAlignLeftIcon)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.tintColor = .whiteColor
         
@@ -102,7 +102,7 @@ class PlaylistCell: UITableViewCell {
     }()
     
     lazy var threeDotsImage: UIImageView = {
-        let imageView = UIImageView(image: .dotImage)
+        let imageView = UIImageView(image: .dotsIcon)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.tintColor = .whiteColor
         

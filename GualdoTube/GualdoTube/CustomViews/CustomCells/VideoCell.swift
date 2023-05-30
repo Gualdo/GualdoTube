@@ -76,7 +76,7 @@ class VideoCell: UITableViewCell {
     }()
     
     lazy var threeDotsImage: UIImageView = {
-        let imageView = UIImageView(image: .dotImage)
+        let imageView = UIImageView(image: .dotsIcon)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.tintColor = .whiteColor
         

@@ -39,6 +39,7 @@
 		2D423C252A1AC4A600B848F8 /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D423C232A1AC4A600B848F8 /* PlaylistCell.swift */; };
 		2D47C4512A1AF2D30090AB49 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2D47C4502A1AF2D30090AB49 /* Kingfisher */; };
 		2D67EAA52A1B4CB10036A463 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D67EAA42A1B4CB10036A463 /* ChannelCell.swift */; };
+		2D6E56202A25DBA800E983A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6E561F2A25DBA800E983A9 /* BaseViewController.swift */; };
 		2D6FC6142A1659EE00436F02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FC6132A1659EE00436F02 /* AppDelegate.swift */; };
 		2D6FC6162A1659EE00436F02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FC6152A1659EE00436F02 /* SceneDelegate.swift */; };
 		2D6FC6182A1659EE00436F02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FC6172A1659EE00436F02 /* ViewController.swift */; };
@@ -89,6 +90,7 @@
 		2D423C1F2A1AC48B00B848F8 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		2D423C232A1AC4A600B848F8 /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
 		2D67EAA42A1B4CB10036A463 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		2D6E561F2A25DBA800E983A9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2D6FC6102A1659EE00436F02 /* GualdoTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GualdoTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6FC6132A1659EE00436F02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D6FC6152A1659EE00436F02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,8 @@
 			children = (
 				2D3F3EEB2A183B0A009CB0AF /* RootPageViewController.swift */,
 				2D3F3EED2A183B25009CB0AF /* MainViewController.swift */,
+				2D6FC6192A1659EE00436F02 /* Main.storyboard */,
+				2D6E561F2A25DBA800E983A9 /* BaseViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -299,7 +303,6 @@
 				2D6FC6132A1659EE00436F02 /* AppDelegate.swift */,
 				2D6FC6152A1659EE00436F02 /* SceneDelegate.swift */,
 				2D6FC6172A1659EE00436F02 /* ViewController.swift */,
-				2D6FC6192A1659EE00436F02 /* Main.storyboard */,
 				2D6FC61C2A1659EF00436F02 /* Assets.xcassets */,
 				2D6FC61E2A1659EF00436F02 /* LaunchScreen.storyboard */,
 				2D6FC6212A1659EF00436F02 /* Info.plist */,
@@ -459,6 +462,7 @@
 				2D3F3EE72A183665009CB0AF /* PlaylistItemsModel.swift in Sources */,
 				2D3F3F192A18537B009CB0AF /* HomePresenter.swift in Sources */,
 				2D7D3DA12A1F632C0096CCC5 /* VideosPresenter.swift in Sources */,
+				2D6E56202A25DBA800E983A9 /* BaseViewController.swift in Sources */,
 				2D3F3EFA2A183CC4009CB0AF /* VideosViewController.swift in Sources */,
 				2D423C212A1AC48B00B848F8 /* VideoCell.swift in Sources */,
 				2D6FC6182A1659EE00436F02 /* ViewController.swift in Sources */,

@@ -65,7 +65,7 @@ class ChannelCell: UITableViewCell {
     }()
     
     lazy var bellImage: UIImageView = {
-        let imageView = UIImageView(image: .bellImage)
+        let imageView = UIImageView(image: .bellIcon)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         imageView.tintColor = .grayColor
@@ -129,7 +129,7 @@ class ChannelCell: UITableViewCell {
     }()
     
     lazy var chevronRightImage: UIImageView = {
-        let imageView = UIImageView(image: .chevronRight)
+        let imageView = UIImageView(image: .chevronRightIcon)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.tintColor = .grayColor
         imageView.contentMode = .scaleAspectFit
