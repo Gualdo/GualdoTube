@@ -7,8 +7,14 @@
 
 import UIKit
 
+enum ScrollDirection {
+    case goingLeft
+    case goingRight
+}
+
 protocol RootPageProtocol: AnyObject {
     func currentPage(_ index: Int)
+    func scrollDetails(direction: ScrollDirection, percent: CGFloat, index: Int)
 }
 
 class RootPageViewController: UIPageViewController {
@@ -17,12 +23,16 @@ class RootPageViewController: UIPageViewController {
     
     var subViewControllers = [UIViewController]()
     var currentIndex: Int = 0
+    var startOffset: CGFloat = 0
+    var currentPage: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
         dataSource = self
+        rootDelegate?.currentPage(0)
         setupControllers()
+        setScrollViewDelegate()
     }
     
     private func setupControllers() {
@@ -45,13 +55,32 @@ class RootPageViewController: UIPageViewController {
     func setViewControllerFromIndex(index: Int, direction: NavigationDirection, animated: Bool = true) {
         setViewControllers([subViewControllers[index]], direction: direction, animated: animated)
     }
+    
+    private func setScrollViewDelegate() {
+        guard let scrollView = view.subviews.filter({ $0 is UIScrollView }).first as? UIScrollView else { return }
+        scrollView.delegate = self
+    }
 }
 
 extension RootPageViewController: UIPageViewControllerDelegate {
     
+    func pageViewController(_ pageViewController: UIPageViewController,
+                            didFinishAnimating finished: Bool,
+                            previousViewControllers: [UIViewController],
+                            transitionCompleted completed: Bool) {
+        if let index = pageViewController.viewControllers?.first?.view.tag {
+            currentIndex = index
+            rootDelegate?.currentPage(index)
+        }
+    }
 }
 
 extension RootPageViewController: UIPageViewControllerDataSource {
+    
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        return subViewControllers.count
+    }
+    
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let index = subViewControllers.firstIndex(of: viewController), index > 0 else {
@@ -67,19 +96,26 @@ extension RootPageViewController: UIPageViewControllerDataSource {
         }
         return subViewControllers[index + 1]
     }
+}
+
+extension RootPageViewController: UIScrollViewDelegate {
     
-    func presentationCount(for pageViewController: UIPageViewController) -> Int {
-        return subViewControllers.count
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        startOffset = scrollView.contentOffset.x
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController,
-                            didFinishAnimating finished: Bool,
-                            previousViewControllers: [UIViewController],
-                            transitionCompleted completed: Bool) {
-        print("Animation Finished: ", finished)
-        if let index = pageViewController.viewControllers?.first?.view.tag {
-            currentIndex = index
-            rootDelegate?.currentPage(index)
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        var direction = 0 // Scroll stopped
+        
+        if startOffset < scrollView.contentOffset.x {
+            direction = 1 // Right
+        } else if startOffset > scrollView.contentOffset.x {
+            direction = -1 // Left
         }
+        
+        let positionFromStartOfCurrentPage = abs(startOffset - scrollView.contentOffset.x)
+        let percent = positionFromStartOfCurrentPage / self.view.frame.width
+        
+        rootDelegate?.scrollDetails(direction: direction == 1 ? .goingRight : .goingLeft, percent: percent, index: currentPage)
     }
 }

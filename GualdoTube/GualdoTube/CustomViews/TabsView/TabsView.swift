@@ -17,6 +17,10 @@ class TabsView: UIView {
     
     private var options: [String] = []
     
+    var selectedItem: IndexPath = IndexPath(row: 0, section: 0)
+    var leadingConstraint: NSLayoutConstraint?
+    var widthConstraint: NSLayoutConstraint?
+    
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -36,6 +40,16 @@ class TabsView: UIView {
         return collection
     }()
     
+    lazy var underline: UIView = {
+        let view = UIView(frame: .zero)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .whiteColor
+        
+        view.heightAnchor.constraint(equalToConstant: 2).isActive = true
+        
+        return view
+    }()
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configCollectionView()
@@ -49,6 +63,9 @@ class TabsView: UIView {
         self.delegate = delegate
         self.options = options
         collectionView.reloadData()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.configUnderline()
+        }
     }
     
     private func configCollectionView() {
@@ -60,6 +77,30 @@ class TabsView: UIView {
             collectionView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             collectionView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
         ])
+    }
+    
+    private func configUnderline() {
+        if let currentCell = collectionView.cellForItem(at: selectedItem) {
+            
+            widthConstraint = underline.widthAnchor.constraint(equalToConstant: currentCell.frame.width)
+            leadingConstraint = underline.leadingAnchor.constraint(equalTo: currentCell.leadingAnchor)
+            
+            if let widthConstraint = widthConstraint, let leadingConstraint = leadingConstraint {
+                self.addSubview(underline)
+                
+                NSLayoutConstraint.activate([
+                    underline.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+                    widthConstraint,
+                    leadingConstraint
+                ])
+            }
+        }
+    }
+    
+    func updateUnderline(xOrigin: CGFloat, width: CGFloat) {
+        widthConstraint?.constant = width
+        leadingConstraint?.constant = xOrigin
+        self.layoutIfNeeded()
     }
 }
 
@@ -78,6 +119,12 @@ extension TabsView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(OptionCollectionViewCell.self)", for: indexPath) as? OptionCollectionViewCell else { return UICollectionViewCell() }
+        
+        if indexPath.row == 0 {
+            cell.highlightedTitle(.whiteColor)
+        } else {
+            cell.isSelected = selectedItem.row == indexPath.row
+        }
         
         cell.configCell(option: options[indexPath.row])
         

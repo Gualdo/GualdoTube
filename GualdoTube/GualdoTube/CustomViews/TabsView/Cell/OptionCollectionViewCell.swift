@@ -15,8 +15,19 @@ class OptionCollectionViewCell: UICollectionViewCell {
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 16)
+        label.textColor = .clear
         return label
     }()
+    
+    override var isSelected: Bool {
+        didSet {
+            highlightedTitle(isSelected ? .whiteColor : .grayColor)
+        }
+    }
+    
+    func highlightedTitle(_ color: UIColor?) {
+        optionLabel.textColor = color
+    }
     
     func configCell(option: String) {
         
