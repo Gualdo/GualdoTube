@@ -40,6 +40,8 @@
 		2D47C4512A1AF2D30090AB49 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2D47C4502A1AF2D30090AB49 /* Kingfisher */; };
 		2D67EAA52A1B4CB10036A463 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D67EAA42A1B4CB10036A463 /* ChannelCell.swift */; };
 		2D6E56202A25DBA800E983A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6E561F2A25DBA800E983A9 /* BaseViewController.swift */; };
+		2D6E56232A25F72600E983A9 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6E56222A25F72600E983A9 /* TabsView.swift */; };
+		2D6E56262A25F8C500E983A9 /* OptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6E56252A25F8C500E983A9 /* OptionCollectionViewCell.swift */; };
 		2D6FC6142A1659EE00436F02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FC6132A1659EE00436F02 /* AppDelegate.swift */; };
 		2D6FC6162A1659EE00436F02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FC6152A1659EE00436F02 /* SceneDelegate.swift */; };
 		2D6FC6182A1659EE00436F02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FC6172A1659EE00436F02 /* ViewController.swift */; };
@@ -91,6 +93,8 @@
 		2D423C232A1AC4A600B848F8 /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
 		2D67EAA42A1B4CB10036A463 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		2D6E561F2A25DBA800E983A9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2D6E56222A25F72600E983A9 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		2D6E56252A25F8C500E983A9 /* OptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCollectionViewCell.swift; sourceTree = "<group>"; };
 		2D6FC6102A1659EE00436F02 /* GualdoTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GualdoTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6FC6132A1659EE00436F02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D6FC6152A1659EE00436F02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -271,6 +275,23 @@
 			path = CustomCells;
 			sourceTree = "<group>";
 		};
+		2D6E56212A25F6FD00E983A9 /* TabsView */ = {
+			isa = PBXGroup;
+			children = (
+				2D6E56242A25F89B00E983A9 /* Cell */,
+				2D6E56222A25F72600E983A9 /* TabsView.swift */,
+			);
+			path = TabsView;
+			sourceTree = "<group>";
+		};
+		2D6E56242A25F89B00E983A9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2D6E56252A25F8C500E983A9 /* OptionCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		2D6FC6072A1659EE00436F02 = {
 			isa = PBXGroup;
 			children = (
@@ -359,6 +380,7 @@
 			children = (
 				2DDD2D492A1E5ABC008A8A5C /* BottomSheet */,
 				2D423C1A2A1AC44000B848F8 /* CustomCells */,
+				2D6E56212A25F6FD00E983A9 /* TabsView */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -459,6 +481,7 @@
 			files = (
 				2D3F3EE92A1838B3009CB0AF /* ChannelModel.swift in Sources */,
 				2D3F3F0C2A184476009CB0AF /* NetworkError.swift in Sources */,
+				2D6E56232A25F72600E983A9 /* TabsView.swift in Sources */,
 				2D3F3EE72A183665009CB0AF /* PlaylistItemsModel.swift in Sources */,
 				2D3F3F192A18537B009CB0AF /* HomePresenter.swift in Sources */,
 				2D7D3DA12A1F632C0096CCC5 /* VideosPresenter.swift in Sources */,
@@ -471,6 +494,7 @@
 				2DDD2D4E2A1EC49E008A8A5C /* UIView+Extension.swift in Sources */,
 				2D7A165F2A24A84B00486F6C /* UITableView+Extension.swift in Sources */,
 				2D3F3EFE2A183CDD009CB0AF /* PlaylistsViewController.swift in Sources */,
+				2D6E56262A25F8C500E983A9 /* OptionCollectionViewCell.swift in Sources */,
 				2D3F3F0E2A184532009CB0AF /* RequestModel.swift in Sources */,
 				2D7D3DA32A1F63410096CCC5 /* VideosProvider.swift in Sources */,
 				2D423C252A1AC4A600B848F8 /* PlaylistCell.swift in Sources */,

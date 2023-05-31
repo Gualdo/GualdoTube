@@ -18,22 +18,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G9s-Ip-IgC">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="148" width="393" height="670"/>
                                 <connections>
                                     <segue destination="6vI-gM-eqh" kind="embed" id="gfk-Td-vNe"/>
                                 </connections>
                             </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7x-Kv-xgF" customClass="TabsView" customModule="GualdoTube" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="103" width="393" height="45"/>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="ulz-KZ-MT0"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G9s-Ip-IgC" secondAttribute="trailing" id="1p5-UI-G89"/>
                             <constraint firstItem="G9s-Ip-IgC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2z1-s4-Vsm"/>
-                            <constraint firstItem="G9s-Ip-IgC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PfY-uo-XW0"/>
+                            <constraint firstItem="G9s-Ip-IgC" firstAttribute="top" secondItem="d7x-Kv-xgF" secondAttribute="bottom" id="6LI-3H-gVy"/>
+                            <constraint firstItem="d7x-Kv-xgF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kac-Do-gRw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="G9s-Ip-IgC" secondAttribute="bottom" id="gDt-UD-kCY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d7x-Kv-xgF" secondAttribute="trailing" id="oFA-4L-XeN"/>
+                            <constraint firstItem="d7x-Kv-xgF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rdT-yu-BMA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fBd-N4-0sC"/>
+                    <connections>
+                        <outlet property="tabsView" destination="d7x-Kv-xgF" id="Xn2-e5-dah"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
