@@ -51,6 +51,7 @@
 		2D6FC61D2A1659EF00436F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FC61C2A1659EF00436F02 /* Assets.xcassets */; };
 		2D6FC6202A1659EF00436F02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FC61E2A1659EF00436F02 /* LaunchScreen.storyboard */; };
 		2D7A165F2A24A84B00486F6C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A165E2A24A84B00486F6C /* UITableView+Extension.swift */; };
+		2D7C74222A29F6A9008BCFE4 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7C74212A29F6A9008BCFE4 /* YouTubeiOSPlayerHelper */; };
 		2D7D3DA12A1F632C0096CCC5 /* VideosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D3DA02A1F632C0096CCC5 /* VideosPresenter.swift */; };
 		2D7D3DA32A1F63410096CCC5 /* VideosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D3DA22A1F63410096CCC5 /* VideosProvider.swift */; };
 		2D7D3DA52A1F66060096CCC5 /* VideosProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D3DA42A1F66060096CCC5 /* VideosProviderMock.swift */; };
@@ -125,6 +126,7 @@
 			files = (
 				2D47C4512A1AF2D30090AB49 /* Kingfisher in Frameworks */,
 				2D4E48232A2901BA005C7F2B /* FloatingPanel in Frameworks */,
+				2D7C74222A29F6A9008BCFE4 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +284,9 @@
 		2D4E48242A2901F2005C7F2B /* PlayVideo */ = {
 			isa = PBXGroup;
 			children = (
-				2D4E48252A290293005C7F2B /* PlayVideoViewController.swift */,
+				2D7C741E2A29F33F008BCFE4 /* Model */,
+				2D7C741D2A29F333008BCFE4 /* Presenter */,
+				2D7C741C2A29F329008BCFE4 /* View */,
 			);
 			path = PlayVideo;
 			sourceTree = "<group>";
@@ -342,6 +346,36 @@
 				2D6FC6212A1659EF00436F02 /* Info.plist */,
 			);
 			path = GualdoTube;
+			sourceTree = "<group>";
+		};
+		2D7C741C2A29F329008BCFE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D4E48252A290293005C7F2B /* PlayVideoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D7C741D2A29F333008BCFE4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2D7C741E2A29F33F008BCFE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D7C741F2A29F352008BCFE4 /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2D7C741F2A29F352008BCFE4 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 		2D7D3D9D2A1F62FC0096CCC5 /* Presenter */ = {
@@ -425,6 +459,7 @@
 			packageProductDependencies = (
 				2D47C4502A1AF2D30090AB49 /* Kingfisher */,
 				2D4E48222A2901BA005C7F2B /* FloatingPanel */,
+				2D7C74212A29F6A9008BCFE4 /* YouTubeiOSPlayerHelper */,
 			);
 			productName = GualdoTube;
 			productReference = 2D6FC6102A1659EE00436F02 /* GualdoTube.app */;
@@ -457,6 +492,7 @@
 			packageReferences = (
 				2D47C44F2A1AF2D30090AB49 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				2D4E48212A2901BA005C7F2B /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+				2D7C74202A29F6A9008BCFE4 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
 			);
 			productRefGroup = 2D6FC6112A1659EE00436F02 /* Products */;
 			projectDirPath = "";
@@ -770,6 +806,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		2D7C74202A29F6A9008BCFE4 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -782,6 +826,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2D4E48212A2901BA005C7F2B /* XCRemoteSwiftPackageReference "FloatingPanel" */;
 			productName = FloatingPanel;
+		};
+		2D7C74212A29F6A9008BCFE4 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D7C74202A29F6A9008BCFE4 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

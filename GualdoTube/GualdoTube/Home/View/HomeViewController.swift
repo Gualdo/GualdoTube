@@ -10,6 +10,13 @@ import FloatingPanel
 
 class HomeViewController: UIViewController {
     
+    private var objectList: [[Any]] = []
+    private var sectionTitleList: [String] = []
+    
+    lazy var presenter = HomePresenter(delegate: self)
+    
+    var fpc: FloatingPanelController?
+    
     lazy var homeTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -17,13 +24,6 @@ class HomeViewController: UIViewController {
         tableView.separatorColor = .clear
         return tableView
     }()
-    
-    lazy var presenter = HomePresenter(delegate: self)
-    
-    private var objectList: [[Any]] = []
-    private var sectionTitleList: [String] = []
-    
-    var fpc: FloatingPanelController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
