@@ -52,6 +52,11 @@
 		2D6FC6202A1659EF00436F02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FC61E2A1659EF00436F02 /* LaunchScreen.storyboard */; };
 		2D7A165F2A24A84B00486F6C /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7A165E2A24A84B00486F6C /* UITableView+Extension.swift */; };
 		2D7C74222A29F6A9008BCFE4 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 2D7C74212A29F6A9008BCFE4 /* YouTubeiOSPlayerHelper */; };
+		2D7C74242A2A0FA8008BCFE4 /* PlayVideoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7C74232A2A0FA8008BCFE4 /* PlayVideoPresenter.swift */; };
+		2D7C74262A2A1211008BCFE4 /* PlayVideoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7C74252A2A1211008BCFE4 /* PlayVideoProvider.swift */; };
+		2D7C74282A2A1236008BCFE4 /* PlayVideoProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7C74272A2A1236008BCFE4 /* PlayVideoProviderMock.swift */; };
+		2D7C742A2A2A1B80008BCFE4 /* VideoFullWidthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7C74292A2A1B80008BCFE4 /* VideoFullWidthCell.swift */; };
+		2D7C742C2A2A1BDC008BCFE4 /* VideoHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7C742B2A2A1BDC008BCFE4 /* VideoHeaderCell.swift */; };
 		2D7D3DA12A1F632C0096CCC5 /* VideosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D3DA02A1F632C0096CCC5 /* VideosPresenter.swift */; };
 		2D7D3DA32A1F63410096CCC5 /* VideosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D3DA22A1F63410096CCC5 /* VideosProvider.swift */; };
 		2D7D3DA52A1F66060096CCC5 /* VideosProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D3DA42A1F66060096CCC5 /* VideosProviderMock.swift */; };
@@ -108,6 +113,11 @@
 		2D6FC61F2A1659EF00436F02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D6FC6212A1659EF00436F02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D7A165E2A24A84B00486F6C /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		2D7C74232A2A0FA8008BCFE4 /* PlayVideoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoPresenter.swift; sourceTree = "<group>"; };
+		2D7C74252A2A1211008BCFE4 /* PlayVideoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoProvider.swift; sourceTree = "<group>"; };
+		2D7C74272A2A1236008BCFE4 /* PlayVideoProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoProviderMock.swift; sourceTree = "<group>"; };
+		2D7C74292A2A1B80008BCFE4 /* VideoFullWidthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFullWidthCell.swift; sourceTree = "<group>"; };
+		2D7C742B2A2A1BDC008BCFE4 /* VideoHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHeaderCell.swift; sourceTree = "<group>"; };
 		2D7D3DA02A1F632C0096CCC5 /* VideosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosPresenter.swift; sourceTree = "<group>"; };
 		2D7D3DA22A1F63410096CCC5 /* VideosProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosProvider.swift; sourceTree = "<group>"; };
 		2D7D3DA42A1F66060096CCC5 /* VideosProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosProviderMock.swift; sourceTree = "<group>"; };
@@ -274,9 +284,11 @@
 			isa = PBXGroup;
 			children = (
 				2D67EAA42A1B4CB10036A463 /* ChannelCell.swift */,
-				2D423C1F2A1AC48B00B848F8 /* VideoCell.swift */,
 				2D423C232A1AC4A600B848F8 /* PlaylistCell.swift */,
 				2DDD2D472A1E53E3008A8A5C /* SectionTitleView.swift */,
+				2D423C1F2A1AC48B00B848F8 /* VideoCell.swift */,
+				2D7C74292A2A1B80008BCFE4 /* VideoFullWidthCell.swift */,
+				2D7C742B2A2A1BDC008BCFE4 /* VideoHeaderCell.swift */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -359,6 +371,7 @@
 		2D7C741D2A29F333008BCFE4 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				2D7C74232A2A0FA8008BCFE4 /* PlayVideoPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -374,6 +387,8 @@
 		2D7C741F2A29F352008BCFE4 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				2D7C74252A2A1211008BCFE4 /* PlayVideoProvider.swift */,
+				2D7C74272A2A1236008BCFE4 /* PlayVideoProviderMock.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -538,6 +553,7 @@
 				2D7D3DA12A1F632C0096CCC5 /* VideosPresenter.swift in Sources */,
 				2D6E56202A25DBA800E983A9 /* BaseViewController.swift in Sources */,
 				2D3F3EFA2A183CC4009CB0AF /* VideosViewController.swift in Sources */,
+				2D7C742C2A2A1BDC008BCFE4 /* VideoHeaderCell.swift in Sources */,
 				2D423C212A1AC48B00B848F8 /* VideoCell.swift in Sources */,
 				2D6FC6182A1659EE00436F02 /* ViewController.swift in Sources */,
 				2D423C0A2A1AB7F900B848F8 /* HomeProviderMock.swift in Sources */,
@@ -545,10 +561,13 @@
 				2D423C0D2A1AB84500B848F8 /* Utils.swift in Sources */,
 				2DDD2D4E2A1EC49E008A8A5C /* UIView+Extension.swift in Sources */,
 				2D7A165F2A24A84B00486F6C /* UITableView+Extension.swift in Sources */,
+				2D7C74262A2A1211008BCFE4 /* PlayVideoProvider.swift in Sources */,
 				2D3F3EFE2A183CDD009CB0AF /* PlaylistsViewController.swift in Sources */,
 				2D6E56262A25F8C500E983A9 /* OptionCollectionViewCell.swift in Sources */,
+				2D7C74282A2A1236008BCFE4 /* PlayVideoProviderMock.swift in Sources */,
 				2D3F3F0E2A184532009CB0AF /* RequestModel.swift in Sources */,
 				2D7D3DA32A1F63410096CCC5 /* VideosProvider.swift in Sources */,
+				2D7C742A2A2A1B80008BCFE4 /* VideoFullWidthCell.swift in Sources */,
 				2D423C252A1AC4A600B848F8 /* PlaylistCell.swift in Sources */,
 				2D3F3EE32A17C54A009CB0AF /* PlaylistsModel.swift in Sources */,
 				2D423C192A1AC36100B848F8 /* MockManager.swift in Sources */,
@@ -562,6 +581,7 @@
 				2D3F3EE52A17D6B7009CB0AF /* VideoModel.swift in Sources */,
 				2D3F3F172A185176009CB0AF /* HomeProvider.swift in Sources */,
 				2D3F3EEE2A183B25009CB0AF /* MainViewController.swift in Sources */,
+				2D7C74242A2A0FA8008BCFE4 /* PlayVideoPresenter.swift in Sources */,
 				2D3F3F0A2A184465009CB0AF /* ServiceLayer.swift in Sources */,
 				2D3F3F062A183D06009CB0AF /* AboutViewController.swift in Sources */,
 				2DDD2D482A1E53E3008A8A5C /* SectionTitleView.swift in Sources */,
@@ -721,8 +741,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -731,9 +750,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = eduardodelacruz.GualdoTube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -750,8 +772,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -760,9 +781,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = eduardodelacruz.GualdoTube;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
