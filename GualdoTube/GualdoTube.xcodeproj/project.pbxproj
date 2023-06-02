@@ -38,6 +38,8 @@
 		2D423C212A1AC48B00B848F8 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D423C1F2A1AC48B00B848F8 /* VideoCell.swift */; };
 		2D423C252A1AC4A600B848F8 /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D423C232A1AC4A600B848F8 /* PlaylistCell.swift */; };
 		2D47C4512A1AF2D30090AB49 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2D47C4502A1AF2D30090AB49 /* Kingfisher */; };
+		2D4E48232A2901BA005C7F2B /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 2D4E48222A2901BA005C7F2B /* FloatingPanel */; };
+		2D4E48262A290293005C7F2B /* PlayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E48252A290293005C7F2B /* PlayVideoViewController.swift */; };
 		2D67EAA52A1B4CB10036A463 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D67EAA42A1B4CB10036A463 /* ChannelCell.swift */; };
 		2D6E56202A25DBA800E983A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6E561F2A25DBA800E983A9 /* BaseViewController.swift */; };
 		2D6E56232A25F72600E983A9 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6E56222A25F72600E983A9 /* TabsView.swift */; };
@@ -91,6 +93,7 @@
 		2D423C182A1AC36100B848F8 /* MockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockManager.swift; sourceTree = "<group>"; };
 		2D423C1F2A1AC48B00B848F8 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		2D423C232A1AC4A600B848F8 /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
+		2D4E48252A290293005C7F2B /* PlayVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoViewController.swift; sourceTree = "<group>"; };
 		2D67EAA42A1B4CB10036A463 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		2D6E561F2A25DBA800E983A9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2D6E56222A25F72600E983A9 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
@@ -121,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D47C4512A1AF2D30090AB49 /* Kingfisher in Frameworks */,
+				2D4E48232A2901BA005C7F2B /* FloatingPanel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +279,14 @@
 			path = CustomCells;
 			sourceTree = "<group>";
 		};
+		2D4E48242A2901F2005C7F2B /* PlayVideo */ = {
+			isa = PBXGroup;
+			children = (
+				2D4E48252A290293005C7F2B /* PlayVideoViewController.swift */,
+			);
+			path = PlayVideo;
+			sourceTree = "<group>";
+		};
 		2D6E56212A25F6FD00E983A9 /* TabsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -317,6 +329,7 @@
 				2D3F3EEF2A183C51009CB0AF /* Home */,
 				2D3F3EEA2A183AD5009CB0AF /* Main */,
 				2D3F3EE12A17C528009CB0AF /* Model */,
+				2D4E48242A2901F2005C7F2B /* PlayVideo */,
 				2D3F3EF52A183C8E009CB0AF /* Playlists */,
 				2D3F3F082A184432009CB0AF /* ServiceLayer */,
 				2D3F3F0F2A1846A7009CB0AF /* Utils */,
@@ -411,6 +424,7 @@
 			name = GualdoTube;
 			packageProductDependencies = (
 				2D47C4502A1AF2D30090AB49 /* Kingfisher */,
+				2D4E48222A2901BA005C7F2B /* FloatingPanel */,
 			);
 			productName = GualdoTube;
 			productReference = 2D6FC6102A1659EE00436F02 /* GualdoTube.app */;
@@ -442,6 +456,7 @@
 			mainGroup = 2D6FC6072A1659EE00436F02;
 			packageReferences = (
 				2D47C44F2A1AF2D30090AB49 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				2D4E48212A2901BA005C7F2B /* XCRemoteSwiftPackageReference "FloatingPanel" */,
 			);
 			productRefGroup = 2D6FC6112A1659EE00436F02 /* Products */;
 			projectDirPath = "";
@@ -490,6 +505,7 @@
 				2D423C212A1AC48B00B848F8 /* VideoCell.swift in Sources */,
 				2D6FC6182A1659EE00436F02 /* ViewController.swift in Sources */,
 				2D423C0A2A1AB7F900B848F8 /* HomeProviderMock.swift in Sources */,
+				2D4E48262A290293005C7F2B /* PlayVideoViewController.swift in Sources */,
 				2D423C0D2A1AB84500B848F8 /* Utils.swift in Sources */,
 				2DDD2D4E2A1EC49E008A8A5C /* UIView+Extension.swift in Sources */,
 				2D7A165F2A24A84B00486F6C /* UITableView+Extension.swift in Sources */,
@@ -746,6 +762,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		2D4E48212A2901BA005C7F2B /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scenee/FloatingPanel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -753,6 +777,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2D47C44F2A1AF2D30090AB49 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		2D4E48222A2901BA005C7F2B /* FloatingPanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D4E48212A2901BA005C7F2B /* XCRemoteSwiftPackageReference "FloatingPanel" */;
+			productName = FloatingPanel;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

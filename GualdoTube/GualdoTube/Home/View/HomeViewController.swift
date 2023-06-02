@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FloatingPanel
 
 class HomeViewController: UIViewController {
     
@@ -22,10 +23,13 @@ class HomeViewController: UIViewController {
     private var objectList: [[Any]] = []
     private var sectionTitleList: [String] = []
     
+    var fpc: FloatingPanelController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configView()
+        configFloatingPanel()
         
         Task {
             await presenter.getHomeObjects()
@@ -56,6 +60,14 @@ class HomeViewController: UIViewController {
         homeTableView.contentInset = UIEdgeInsets(top: -15, left: 0, bottom: 0, right: 0)
     }
     
+    private func configFloatingPanel() {
+        fpc = FloatingPanelController(delegate: self)
+        fpc?.isRemovalInteractionEnabled = true
+        fpc?.surfaceView.grabberHandle.isHidden = true
+        fpc?.layout = MyFloatingPanelLayout()
+        fpc?.surfaceView.contentPadding = .init(top: -48, left: 0, bottom: -48, right: 0)
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let pan = scrollView.panGestureRecognizer
         let velocity = pan.velocity(in: scrollView).y
@@ -70,6 +82,16 @@ class HomeViewController: UIViewController {
         let vC = BottomSheetViewController()
         vC.modalPresentationStyle = .overCurrentContext
         self.present(vC, animated: false)
+    }
+    
+    private func presentViewPanel(with videoId: String) {
+        let contentVC = PlayVideoViewController()
+        contentVC.videoId = videoId
+        fpc?.set(contentViewController: contentVC)
+        
+        if let fpc = fpc {
+            present(fpc, animated: true)
+        }
     }
 }
 
@@ -88,6 +110,21 @@ extension HomeViewController: UITableViewDelegate {
         sectionView?.titleLabel.text = sectionTitleList[section]
         sectionView?.configView()
         return sectionView
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = objectList[indexPath.section]
+        var videoId = ""
+        
+        if let playlistItem = item as? [PlaylistItemsModel.Item] {
+            videoId = playlistItem[indexPath.row].contentDetails?.videoId ?? ""
+        } else if let videos = item as? [VideoModel.Item] {
+            videoId = videos[indexPath.row].id ?? ""
+        } else {
+            return
+        }
+        
+        presentViewPanel(with: videoId)
     }
 }
 
@@ -157,5 +194,29 @@ extension HomeViewController: HomeViewProtocol {
         objectList = list
         self.sectionTitleList = sectionTitleList
         homeTableView.reloadData()
+    }
+}
+
+extension HomeViewController: FloatingPanelControllerDelegate {
+    
+    func floatingPanelDidRemove(_ fpc: FloatingPanelController) {
+        
+    }
+    
+    func floatingPanelWillEndDragging(_ fpc: FloatingPanelController, withVelocity velocity: CGPoint, targetState: UnsafeMutablePointer<FloatingPanelState>) {
+        if targetState.pointee != .full {
+            
+        } else {
+            
+        }
+    }
+}
+
+class MyFloatingPanelLayout: FloatingPanelLayout {
+    let position: FloatingPanelPosition = .bottom
+    let initialState: FloatingPanelState = .full
+    var anchors: [FloatingPanelState: FloatingPanelLayoutAnchoring] {
+        return [.full: FloatingPanelLayoutAnchor(absoluteInset: 0.0, edge: .top, referenceGuide: .safeArea),
+                .tip: FloatingPanelLayoutAnchor(absoluteInset: 60.0, edge: .bottom, referenceGuide: .safeArea)]
     }
 }

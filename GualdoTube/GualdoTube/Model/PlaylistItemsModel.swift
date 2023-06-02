@@ -20,7 +20,7 @@ struct PlaylistItemsModel: Codable {
         let etag: String
         let id: String
         let snippet: Snippet
-        let contentDetails: ContentDetails
+        let contentDetails: ContentDetails?
         
         // MARK: - Snippet
         struct Snippet: Codable {
@@ -69,8 +69,8 @@ struct PlaylistItemsModel: Codable {
         
         // MARK: - ContentDetails
         struct ContentDetails: Codable {
-            let videoId: String
-            let videoPublishedAt: String
+            let videoId: String?
+            let videoPublishedAt: String?
         }
     }
     
